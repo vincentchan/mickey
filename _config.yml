@@ -17,10 +17,10 @@ description:         'description'
 url:                 site url
 rss:                 rss feed url
 baseurl:             '/mickey/'
-baseurl_posts_img:   '/assets/images/posts/'
-baseurl_featured_img: '/assets/images/hero/'
-baseurl_featured_thumbnail: '/assets/images/thumbnail/'
-baseurl_javascripts: '/assets/javascripts/'
+baseurl_posts_img:   '/mickey/assets/images/posts/'
+baseurl_featured_img: '/mickey/assets/images/hero/'
+baseurl_featured_thumbnail: '/mickey/assets/images/thumbnail/'
+baseurl_javascripts: '/mickey/assets/javascripts/'
 icon:                your site icon path # /assets/img/icon.png [best 300px X 300px]
 disqus:              disqus_shortname # get it on https://disqus.com/admin/
 
