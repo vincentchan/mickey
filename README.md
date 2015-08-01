@@ -1,6 +1,8 @@
 # Mickey
 
-Mickey is a minimal one-column, responsive theme for [Jekyll](http://jekyllrb.com). It's inspired by [Hyde](http://hyde.getpoole.com), [Medium](http://medium.com), and [Squarespace](http://squarespace.com).
+Mickey is a minimal one-column, responsive theme for [Jekyll](http://jekyllrb.com).
+
+It's inspired by [Hyde](http://hyde.getpoole.com), [Medium](http://medium.com), and [Squarespace](http://squarespace.com).
 
 ![Mickey screenshots](/assets/images/demo.png)
 
@@ -126,4 +128,4 @@ Post thumbnails are automatically resized via Gulp's image resize package, and m
 
 Open sourced under the [MIT license](LICENSE.md).
 
-**Disclaimer: This Jekyll theme is not affiliated with Disney.**
+**Disclaimer: This Jekyll theme is not affiliated with Disney. Obviously :)**
