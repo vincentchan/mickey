@@ -1,0 +1,317 @@
+//
+// Navigation
+// --------------------------------------------------
+//
+// Credit: Sidebar Toggle inspired by Lanyon theme by @mdo
+
+// Sidebar nav
+
+.sidebar {
+  width: 14rem;
+  visibility: hidden;
+  padding: 30px 20px;
+  font-family: $title-secondary-font;
+  font-size: $font-S;
+  background-color: $gray-darker;
+  z-index: $zIndex-9--sidebar;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-overflow-scrolling: touch !important;
+
+  &::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  &::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+  }
+}
+
+.sidebar--left {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -14rem;
+}
+
+.sidebar--right {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: -14rem;
+}
+
+.postWrapper,
+.sidebar,
+.sidebar-toggle {
+  -webkit-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.sidebar-checkbox {
+  display: none;
+}
+
+.sidebar-toggle-wrapper {
+  position: fixed;
+  z-index: $zIndex-5--sidebar-toggle-wrapper;
+  top: 30px;
+  right: 3%;
+  width: 44px;
+  height: 44px;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  cursor: pointer;
+  border-radius: 99px;
+  background-color: $white;
+}
+
+.sidebar-toggle-wrapper:hover .sidebar-toggle {
+  background-color: #666;
+}
+
+// Sidebar toggle
+
+.sidebar-toggle {
+  position: absolute;
+  z-index: $zIndex-6--sidebar-toggle;
+  top: 48%;
+  left: 50%;
+  margin-left: -10px;
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: $black;
+  /* background-color: transparent;
+  border-radius: 4px; */
+  -webkit-transition: background 0.3s;
+  -moz-transition: background 0.3s;
+  transition: background 0.3s;
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    background: inherit;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: -webkit-transform 0.5s, background 0s;
+    -moz-transition: -moz-transform 0.5s, background 0s;
+    transition: transform 0.5s, background 0s;
+  }
+
+  &:before {
+    top: -6px;
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  &:after {
+    bottom: -6px;
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+  }
+}
+
+/* .sidebar-toggle--black {
+  background: $black;
+} */
+
+// sidebar toggle behavior
+
+/* #sidebar-checkbox:checked ~ .postWrapper, */
+#sidebar-checkbox:checked ~ .sidebar,
+#sidebar-checkbox:checked ~ .sidebar-toggle-wrapper {
+  -webkit-transform: translateX(-14rem);
+  -ms-transform: translateX(-14rem);
+  transform: translateX(-14rem);
+}
+
+.sidebar-toggle:active,
+#sidebar-checkbox:checked ~ .sidebar-toggle-wrapper {
+  position: fixed;
+  background-color: rgba($black,0.8);
+}
+
+#sidebar-checkbox:checked ~ .sidebar-toggle-wrapper .sidebar-toggle {
+  background: transparent;
+
+  &:before,
+  &:after {
+    background: $white;
+  }
+
+  &:before {
+    top: 0;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+
+  &:after {
+    bottom: 0;
+    -webkit-transform: rotate(225deg);
+    -moz-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+    -o-transform: rotate(225deg);
+    transform: rotate(225deg);
+  }
+}
+
+#sidebar-checkbox:checked ~ .sidebar {
+  visibility: visible;
+}
+
+.postWrapper,
+.sidebar-toggle-wrapper {
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+}
+
+// Sidebar content
+
+.sidebar-recentPosts {
+  list-style: none;
+  margin: $leading 0 0;
+  padding: 0;
+  font-size: $font-XS;
+
+  a,
+  a:hover {
+    text-decoration: none;
+    background-image: none;
+  }
+
+  a {
+    display: block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    line-height: 1.5;
+    color: rgba($white,.8);
+  }
+
+  a:hover {
+    color: rgba($white,1);
+  }
+
+  li {
+    list-style: none;
+    margin-bottom: $leading;
+  }
+
+  .postMeta {
+    font-size: $font-XS;
+    color: rgba($white,.4);
+  }
+}
+
+.sidebar-recentPosts-image-wrapper {
+  display: block;
+  width: 100%;
+  height: 3 * $leading;
+  background: #333;
+  overflow: hidden;
+  margin-bottom: 15px;
+
+  img {
+    min-height: 3 * $leading;
+    width: 150%;
+    height: auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+// Left side menu
+
+.menuWrapper {
+  position: absolute;
+  z-index: $zIndex-5--sidebar-toggle-wrapper;
+  top: 30px;
+  left: 3%;
+}
+
+.menuWrapper ul {
+  list-style: none;
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+
+  li {
+    position: relative;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    padding: 0 15px;
+  }
+
+  ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    padding: 0;
+  }
+}
+
+.menuWrapper ul li:hover {
+  // display: block;
+  opacity: 0.8;
+
+  > ul {
+    display: block;
+  }
+}
+
+.list--avatarMenu {
+
+  .list-item {
+    float: none;
+    width: 200px;
+  }
+
+  a {
+    padding: 10px 15px;
+  }
+}

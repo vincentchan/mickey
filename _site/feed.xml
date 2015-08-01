@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<channel>
+		<title>site name</title>
+		<description>description</description>
+		<link>site url</link>
+		<atom:link href="site url/feed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>A Life of Walt Disney</title>
+				
+				
+					<description>Walter Elias Disney was an American entrepreneur, cartoonist, animator, voice actor, and film producer. As a prominent...</description>
+				
+				<pubDate>Mon, 15 Dec 2014 01:00:00 +0000</pubDate>
+				<link>site url/a-life-of-walt-disney</link>
+				<guid isPermaLink="true">site url/a-life-of-walt-disney</guid>
+			</item>
+		
+			<item>
+				<title>Mickey Mouse</title>
+				
+				
+					<description>Mickey Mouse is a funny animal cartoon character and the official mascot of...</description>
+				
+				<pubDate>Fri, 28 Nov 2014 01:00:00 +0000</pubDate>
+				<link>site url/mickey-mouse</link>
+				<guid isPermaLink="true">site url/mickey-mouse</guid>
+			</item>
+		
+			<item>
+				<title>Television and later films</title>
+				
+				
+					<description>Mickey first appeared animated in color in Parade of the Award Nominees in 1932, however the film strip was...</description>
+				
+				<pubDate>Fri, 16 Dec 1983 01:00:00 +0000</pubDate>
+				<link>site url/television</link>
+				<guid isPermaLink="true">site url/television</guid>
+			</item>
+		
+			<item>
+				<title>Color films</title>
+				
+				
+					<description>Mickey first appeared animated in color in Parade of the Award Nominees in 1932, however the film strip was...</description>
+				
+				<pubDate>Fri, 18 Nov 1932 01:00:00 +0000</pubDate>
+				<link>site url/color-films</link>
+				<guid isPermaLink="true">site url/color-films</guid>
+			</item>
+		
+			<item>
+				<title>Comics</title>
+				
+				
+					<description>Mickey first appeared in comics after he had appeared in 15 commercially successful animated shorts and was easily recognized by ...</description>
+				
+				<pubDate>Mon, 13 Jan 1930 01:00:00 +0000</pubDate>
+				<link>site url/comics</link>
+				<guid isPermaLink="true">site url/comics</guid>
+			</item>
+		
+			<item>
+				<title>Black and white films</title>
+				
+				
+					<description>In Mickey&#39;s early films he was often characterized not as a hero, but as an ineffective young suitor to Minnie Mouse...</description>
+				
+				<pubDate>Thu, 28 Mar 1929 01:00:00 +0000</pubDate>
+				<link>site url/black-and-white-films</link>
+				<guid isPermaLink="true">site url/black-and-white-films</guid>
+			</item>
+		
+			<item>
+				<title>Mickey Mouse&#39;s Debut</title>
+				
+				
+					<description>Disney had Ub Iwerks secretly begin animating a new cartoon while still under contract with Universal...</description>
+				
+				<pubDate>Sun, 18 Nov 1928 01:00:00 +0000</pubDate>
+				<link>site url/debut</link>
+				<guid isPermaLink="true">site url/debut</guid>
+			</item>
+		
+	</channel>
+</rss>

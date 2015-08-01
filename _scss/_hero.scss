@@ -1,0 +1,218 @@
+//
+// Hero area
+// --------------------------------------------------
+
+.section--first {
+  width: 100%;
+  top: 0;
+  position: relative;
+  color: $black;
+}
+
+.section--first,
+.section-backgroundImage {
+  height: 19 * $leading;
+
+  @media (max-width: $screen-xs-max) {
+    height: 14 * $leading;
+  }
+}
+
+.section--frontpage,
+.section--frontpage ~ .post-featuredImage {
+  height: 12 * $leading;
+
+  @media (max-width: $screen-xs-max) {
+    height: 5 * $leading;
+  }
+}
+
+.section--about,
+.section-backgroundImage,
+.section--about ~ .post-featuredImage {
+  height: 24 * $leading;
+
+  @media (max-width: $screen-xs-max) {
+    height: 20 * $leading;
+  }
+}
+
+// Inspired by SQUARESPACE
+
+.section-backgroundImage {
+  position: absolute;
+  display: block;
+  width: 100%;
+  background: #333;
+  top: 0;
+  z-index: $zIndex-neg2--carousel-backgroundImg;
+  overflow: hidden;
+
+  .post-featuredImage {
+    min-width: 100%;
+    min-height: 19 * $leading;
+    width: 2000px;
+    height: auto;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    -webkit-transition-property: opacity, left, top, width;
+    -webkit-transition-duration: 1s, .1s, .1s, .1s;
+    -webkit-transition-timing-function: cubic-bezier(.33,0,.2,1);
+    -webkit-transition-delay: 0;
+    -moz-transition-property: opacity, left, top, width;
+    -moz-transition-duration: 1s, .1s, .1s, .1s;
+    -moz-transition-timing-function: cubic-bezier(.33,0,.2,1);
+    -moz-transition-delay: 0;
+    -ms-transition-property: opacity, left, top, width;
+    -ms-transition-duration: 1s, .1s, .1s, .1s;
+    -ms-transition-timing-function: cubic-bezier(.33,0,.2,1);
+    -ms-transition-delay: 0;
+    -o-transition-property: opacity, left, top, width;
+    -o-transition-duration: 1s, .1s, .1s, .1s;
+    -o-transition-timing-function: cubic-bezier(.33,0,.2,1);
+    -o-transition-delay: 0;
+    transition-property: opacity, left, top, width;
+    transition-duration: 1s, .1s, .1s, .1s;
+    transition-timing-function: cubic-bezier(.33,0,.2,1);
+    -transition-delay: 0;
+
+    &.is-loaded {
+      opacity: 1;
+    }
+  }
+}
+
+.section-backgroundImage--previousPage img {
+  position: relative;
+}
+
+.section-gradient {
+
+  &:before,
+  &:after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: $zIndex-neg1--section-gradient;
+    opacity: 0.6;
+  }
+
+  &:before {
+    background: -webkit-gradient(linear,left top,left bottom,from(rgba($hero-gradient,.8)),color-stop(100%,rgba($hero-gradient,0)));
+    background: -webkit-linear-gradient(top,rgba($hero-gradient,.8),rgba($hero-gradient,0) 100%);
+    background: linear-gradient(to bottom,rgba($hero-gradient,.8),rgba($hero-gradient,0) 100%);
+  }
+
+  &:after {
+    background: rgba($hero-gradient,.6);
+  }
+}
+
+.section-gradient--darker {
+
+  &:before,
+  &:after {
+    opacity: 1;
+  }
+}
+
+.section-gradient--lighter {
+
+  &:before,
+  &:after {
+    opacity: 0.4;
+  }
+}
+
+.section-title {
+  z-index: $zIndex-1--section-title;
+  text-align: center;
+}
+
+.section-title h2,
+.section-title h4 {
+  margin-top: 0;
+}
+
+.section-title h2 {
+  @media (max-width: $screen-xs-max) {
+    font-size: $font-L;
+    line-height: 1.5;
+  }
+}
+
+.postMeta-wrapper {
+  margin-top: $leading;
+  display: inline-block;
+}
+
+.postMeta-wrapper--frontpage {
+  position: absolute;
+  display: inherit;
+  top: 165px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: $zIndex-5--tagline-frontpage;
+
+  .postMeta-tagline {
+    font-weight: 300;
+    letter-spacing: 0.04rem;
+    color: $gray-light;
+    text-transform: none;
+
+    @media (max-width: $screen-xs-max) {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: $screen-xs-max) {
+    width: 300px;
+    top: 160px;
+  }
+}
+
+.postMeta {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.postMeta li {
+  float: left;
+  margin: 0;
+  padding: 0 0 0 10px;
+  font-family: $title-secondary-font;
+  font-weight: 700;
+  font-size: $font-XS;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  &:after {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    overflow: hidden;
+    margin-left: 4px;
+    border-radius: 100%;
+    margin-bottom: 2px;
+    background-color: rgba(255,255,255,.6);
+  }
+
+  &:last-child:after {
+    display: none;
+  }
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    font-size: $font-XXS;
+  }
+}

@@ -1,0 +1,97 @@
+//
+// Utilities
+// --------------------------------------------------
+//
+// Credit: Bootstrap 3
+
+// Floats
+// -------------------------
+
+.u-clearfix {
+  @include clearfix();
+}
+.u-alignRight {
+  float: right !important;
+}
+.u-alignLeft {
+  float: left !important;
+}
+
+.u-alignCenter {
+  text-align: center !important;
+}
+
+// Table display
+// -------------------------
+
+.u-table {
+  display: table !important;
+
+  &:before {
+    height: auto !important;
+    display: inherit !important;
+  }
+}
+
+.u-tableCell {
+  display: table-cell !important;
+}
+
+.u-verticalAlignTop {
+  vertical-align: top !important;
+}
+
+.u-verticalAlignMiddle {
+  vertical-align: middle !important;
+}
+
+.u-verticalAlignBottom {
+  vertical-align: bottom !important;
+}
+
+// Toggling content
+// -------------------------
+
+// Note: Deprecated .hide in favor of .hidden or .sr-only (as appropriate) in v3.0.1
+.hide {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+.invisible {
+  visibility: hidden;
+}
+
+// Hide from screenreaders and browsers
+//
+// Credit: HTML5 Boilerplate
+
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+.is-blurred {
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  filter: blur(10px);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.u-overflow-y-hidden {
+  overflow-y: hidden;
+}
+
+.u-scrollbar-hidden {
+  padding-right: 15px;
+}
+
+.u-clearHr {
+  clear: both;
+  visibility: hidden;
+}

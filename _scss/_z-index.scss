@@ -1,0 +1,55 @@
+//
+// Z-index scale
+// --------------------------------------------------
+//
+// Z-index values should always be defined in z-index.scss. This
+// allows us to at a glance determine relative layers of our application and prevents bugs
+// arrising from arbitrary z-index values. Do not edit the z-index scale! Only add application
+// scoped z-index values.
+//
+// Credit: Medium.com's z-index scale
+
+
+// Z-Index Scale (private vars)
+// --------------------------------------------------
+$zIndex-neg2:   -200;
+$zIndex-neg1:   -100;
+$zIndex-1:   100;
+$zIndex-2:   200;
+$zIndex-3:   300;
+$zIndex-4:   400;
+$zIndex-5:   500;
+$zIndex-6:   600;
+$zIndex-7:   700;
+$zIndex-8:   800;
+$zIndex-9:   900;
+$zIndex-10: 1000;
+
+
+// Z-Index Applications
+// --------------------------------------------------
+$zIndex-neg2--carousel-backgroundImg:   $zIndex-neg2;
+
+$zIndex-neg1--section-gradient:         $zIndex-neg1;
+
+$zIndex-1--section-title:               $zIndex-1;
+
+$zIndex-4--post-wrapper:                $zIndex-4;
+$zIndex-4--posts-wrapper:               $zIndex-4;
+
+$zIndex-5--metabar:                     $zIndex-5;
+$zIndex-5--sidebar-toggle-wrapper:      $zIndex-5;
+$zIndex-5--textlogo-frontpage:          $zIndex-5;
+$zIndex-5--tagline-frontpage:           $zIndex-5;
+$zIndex-5--modal-toggle-bubbleshadow:   $zIndex-5;
+
+$zIndex-6--sidebar-toggle:              $zIndex-6;
+$zIndex-6--modal-toggle-bubble:         $zIndex-6;
+$zIndex-6--modal-toggle-close:          $zIndex-6;
+
+$zIndex-7--modal-toggle-group:          $zIndex-7;
+$zIndex-7--modal-toggle-wrapper:        $zIndex-7;
+
+$zIndex-8--fullscreen-modal:            $zIndex-8;
+
+$zIndex-9--sidebar:              		    $zIndex-9;

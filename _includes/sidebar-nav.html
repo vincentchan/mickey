@@ -1,0 +1,20 @@
+<nav role="navigation" class="sidebar sidebar--right">
+  <a href="{{site.baseurl}}" class="textLogo textLogo--white textLogo--sidebar">{{ site.name }}</a>
+  <ul class="sidebar-recentPosts">
+    {% for post in site.posts offset:0 limit:10 %}
+      {% if post.title == page.title %}
+        <!-- exclude current post -->
+      {% else %}
+      <li>
+        {% if post.image.feature %}
+          <a href="{{ post.url }}" class="sidebar-recentPosts-image-wrapper">
+            <img src="{{ post.image.feature | prepend: site.baseurl_featured_thumbnail }}" style="" alt="">
+          </a>
+        {% endif %}
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        <div class="postMeta">{{ post.date | date_to_string }}</div>
+      </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</nav>

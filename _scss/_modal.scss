@@ -1,0 +1,279 @@
+//
+// Modal
+// --------------------------------------------------
+
+.fullscreenModal {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%; // temp solution
+  height: 100%;
+  color: $white;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  background: transparent;
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+  -webkit-transition: opacity 0.3s ease-in;
+  -moz-transition: opacity 0.3s ease-in;
+  transition: opacity 0.3s ease-in;
+  z-index: $zIndex-8--fullscreen-modal;
+}
+
+.fullscreenModal.active {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.fullscreenModal h2 {
+  font-size: $font-M;
+}
+
+.modal-toggle-group {
+  position: fixed;
+  display: block;
+  bottom: 30px;
+	right: 3%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .5s cubic-bezier(0.23, 1, 0.32, 1);
+  z-index: $zIndex-7--modal-toggle-group;
+}
+
+.modal-toggle-group.active {
+  opacity: 1;
+  visibility: visible;
+
+  &.scaleIn {
+    transform: scale(1);
+  }
+}
+
+.modal-toggle-group,
+.modal-toggle-wrapper,
+.modal-toggle-close-wrapper,
+.modal-toggle-bubble,
+.modal-toggle-bubbleShadow {
+  height: 44px;
+	width: 44px;
+  border-radius: 50%;
+}
+
+.modal-toggle-wrapper {
+	position: absolute;
+  top: 0;
+  display: block;
+  background-image: url(../images/heart.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 60%;
+  background-color: transparent;
+	cursor: pointer;
+	-webkit-transform: scale(1);
+	-webkit-transition: all 0.3s ease-out;
+  z-index: $zIndex-7--modal-toggle-wrapper;
+}
+
+.modal-toggle-wrapper.active {
+  opacity: 0;
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.modal-toggle-close-wrapper {
+  position: absolute;
+  top: 0;
+  z-index: $zIndex-6--modal-toggle-close;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+
+  .modal-toggle-close {
+    position: absolute;
+    top: 48%;
+    left: 15%;
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: transparent;
+    -webkit-transition: background 0.3s;
+    -moz-transition: background 0.3s;
+    transition: background 0.3s;
+    z-index: inherit;
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      background: inherit;
+      width: 100%;
+      height: 100%;
+      -webkit-transform: translateZ(0);
+      -moz-transform: translateZ(0);
+      -ms-transform: translateZ(0);
+      -o-transform: translateZ(0);
+      transform: translateZ(0);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -webkit-transition: -webkit-transform 0.5s, background 0s;
+      -moz-transition: -moz-transform 0.5s, background 0s;
+      transition: transform 0.5s, background 0s;
+    }
+
+    &:before {
+      top: -6px;
+      -webkit-transform: rotate(0);
+      -moz-transform: rotate(0);
+      -ms-transform: rotate(0);
+      -o-transform: rotate(0);
+      transform: rotate(0);
+    }
+
+    &:after {
+      bottom: -6px;
+      -webkit-transform: rotate(0);
+      -moz-transform: rotate(0);
+      -ms-transform: rotate(0);
+      -o-transform: rotate(0);
+      transform: rotate(0);
+    }
+  }
+}
+
+.modal-toggle-close-wrapper.active {
+  opacity: 1;
+  z-index: $zIndex-6--modal-toggle-close;
+
+  .modal-toggle-close {
+    background: transparent;
+
+    &:before,
+    &:after {
+      background: $white;
+    }
+
+    &:before {
+      top: 0;
+      -webkit-transform: rotate(135deg);
+      -moz-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+      -o-transform: rotate(135deg);
+      transform: rotate(135deg);
+    }
+
+    &:after {
+      bottom: 0;
+      -webkit-transform: rotate(225deg);
+      -moz-transform: rotate(225deg);
+      -ms-transform: rotate(225deg);
+      -o-transform: rotate(225deg);
+      transform: rotate(225deg);
+    }
+  }
+}
+
+.modal-toggle-bubble {
+  position: absolute;
+  top: 0;
+  background-color: rgba($black,.9);
+	-webkit-transform: scale(1);
+	-webkit-transition: all 0.3s ease-out;
+  z-index: $zIndex-6--modal-toggle-bubble;
+}
+
+.modal-toggle-bubble.active {
+	-webkit-transform: scale(100);
+	-webkit-transition: all 0.6s ease-out;
+	-webkit-transition-delay: .4s;
+}
+
+.modal-toggle-bubbleShadow {
+  position: absolute;
+  top: 0;
+  background-color: $black;
+	-webkit-transform: scale(1);
+	opacity: 1;
+  z-index: $zIndex-5--modal-toggle-bubbleshadow;
+}
+
+.modal-toggle-bubbleShadow.active {
+	-webkit-transform: scale(1.5);
+	opacity: 0;
+	-webkit-transition: all 0.3s ease-out;
+}
+
+// share buttons
+
+.h2--shareTitle {
+  margin-top: -100px;
+}
+
+.shareWrapper {
+  @include clearfix();
+  list-style: none;
+  margin: $leading auto 0;
+  padding: 0;
+  width: 60%;
+
+  li .shareButton {
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0 15px;
+    width: 16.66%;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    opacity: 0.8;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    @media (min-width: $screen-sm-max) and (max-width: $screen-lg-min) {
+      width: 16.66%;
+      height: 60px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      float: none;
+      width: 100%;
+      height: 40px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.shareButton--twitter {
+  background-image: url(../images/twitter.svg);
+}
+
+.shareButton--facebook {
+  background-image: url(../images/facebook.svg);
+}
+
+.shareButton--linkedin {
+  background-image: url(../images/linkedin.svg);
+}
+
+.shareButton--buffer {
+  background-image: url(../images/buffer.svg);
+}
+
+.shareButton--hackernews {
+  background-image: url(../images/ycombinator.svg);
+}
+
+.shareButton--pocket {
+  background-image: url(../images/pocket.svg);
+}

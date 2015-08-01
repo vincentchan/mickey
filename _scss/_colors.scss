@@ -1,0 +1,29 @@
+//
+// Colors
+// --------------------------------------------------
+
+$gray-darker:           lighten(#000, 13.5%) !default; // #222
+$gray-dark:             lighten(#000, 20%) !default;   // #333
+$gray:                  lighten(#000, 33.5%) !default; // #555
+$gray-light:            lighten(#000, 46.7%) !default; // #777
+$gray-lighter:          lighten(#000, 93.5%) !default; // #eee
+
+$white:                 #fff;
+$black:                 #222;
+
+$brand-primary:         #428bca !default;
+$brand-success:         #5cb85c !default;
+$brand-info:            #5bc0de !default;
+$brand-warning:         #f0ad4e !default;
+$brand-danger:          #d9534f !default;
+
+$body-bg:               #fff !default;
+$frontpage-body-bg:     #f2f2f2 !default;
+$text-color:            rgba(0,0,0,0.8) !default;
+
+$link-color:            $text-color !default;
+$link-hover-color:      darken($link-color, 15%) !default;
+
+$metabar-top-bg:				#eee !default;
+
+$hero-gradient:         $gray-dark;

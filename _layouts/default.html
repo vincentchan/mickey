@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us" class="no-js">
+
+  {% include head.html %}
+
+  <body>
+    {% if page.url != '/index.html' %}
+      <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+      {% include sidebar-nav.html %}
+      {% include menu.html %}
+    {% endif %}
+
+    {{ content }}
+
+    {% if page.url != '/index.html' %}
+      {% include sidebar-toggle.html %}
+    {% endif %}
+
+    {% if page.url == '/index.html' %}
+      {% include subscribe.html %}
+      {% include footer.html %}
+    {% endif %}
+
+    {% include footer-scripts.html %}
+  </body>
+</html>

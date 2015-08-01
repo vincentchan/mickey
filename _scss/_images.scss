@@ -1,0 +1,62 @@
+//
+// Images
+// --------------------------------------------------
+
+.img {
+  margin-top: $leading;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.img--fullContainer img {
+  width: 100%;
+}
+
+.img--5xLeading {
+  height: 5*$leading;
+}
+
+.img--6xLeading {
+  height: 6*$leading;
+}
+
+.img--7xLeading {
+  height: 7*$leading;
+}
+
+.img--8xLeading {
+  height: 8*$leading;
+}
+
+.img--9xLeading {
+  height: 9*$leading;
+}
+
+.img--10xLeading {
+  height: 10*$leading;
+}
+
+.img--11xLeading {
+  height: 11*$leading;
+}
+
+.img--12xLeading {
+  height: 12*$leading;
+}
+
+.img--13xLeading {
+  height: 13*$leading;
+}
+
+.img--14xLeading {
+  height: 14*$leading;
+}
+
+.img--15xLeading {
+  height: 15*$leading;
+}
+
+.img--16xLeading {
+  height: 16*$leading;
+}
