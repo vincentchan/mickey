@@ -80,7 +80,7 @@ layout: default
         <div class="section-title u-tableCell u-verticalAlignMiddle">
           <div class="container">
             <h4>Next story:</h4>
-            <a class="prev" href="{{page.previous.url}}">
+            <a class="prev" href="{{ page.previous.url | prepend: site.baseurl }}">
               <h2>{{page.previous.title}}</h2>
             </a>
           </div>

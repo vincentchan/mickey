@@ -28,17 +28,17 @@ title: Mickey Theme for Jekyll
             <div class="postArticle-wrapper">
               <article class="postArticle postArticle--short">
                 {% if post.image.feature %}
-                  <a href="{{ post.url }}">
+                  <a href="{{ post.url | prepend: site.baseurl }}">
                     <div class="postArticle-image desaturate" style="background-image:url('{{ post.image.feature | prepend: site.baseurl_featured_img }}')">
                     </div>
                   </a>
                 {% else %}
-                <a href="{{ post.url }}">
+                <a href="{{ post.url | prepend: site.baseurl }}">
                   <div class="postArticle-image" style="background-image:url('{{site.baseurl}}assets/images/logo-black.svg')">
                   </div>
                 </a>
                 {% endif %}
-                <a class="postArticle-title" href="{{ post.url }}">{{ post.title }}</a>
+                <a class="postArticle-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
               </article>
               <div class="block-postMeta">{{ post.date | date_to_string }}</div>
             </div>
