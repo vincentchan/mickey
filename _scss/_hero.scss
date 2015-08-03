@@ -23,7 +23,7 @@
   height: 12 * $leading;
 
   @media (max-width: $screen-xs-max) {
-    height: 5 * $leading;
+    height: 10 * $leading;
   }
 }
 
@@ -172,7 +172,7 @@
 
   @media (max-width: $screen-xs-max) {
     width: 300px;
-    top: 160px;
+    top: 100px;
   }
 }
 
