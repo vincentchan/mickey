@@ -555,9 +555,9 @@ body {
 }
 @media (max-width: 767px) {
   .textLogo--frontpage {
-    width: 300px;
-    height: 34px;
-    top: 148px;
+    width: 182px;
+    height: 33px;
+    top: 99px;
   }
 }
 
@@ -1759,7 +1759,7 @@ body {
 @media (max-width: 767px) {
   .section--frontpage,
   .section--frontpage ~ .post-featuredImage {
-    height: 7.5rem;
+    height: 15rem;
   }
 }
 
@@ -1905,7 +1905,7 @@ body {
 @media (max-width: 767px) {
   .postMeta-wrapper--frontpage {
     width: 300px;
-    top: 160px;
+    top: 100px;
   }
 }
 
