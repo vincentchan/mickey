@@ -8,12 +8,12 @@ permalink:           /:title
 relative_permalinks: true
 
 # Setup
-timezone:            your timezone # eg. Asia/Kathmandu
-locale:              your locale language # eg. en_us
-name:				         site name
-title:               site title
-tagline:             'tagline'
-description:         'description'
+timezone:            United States/Miami, Fl # eg. Asia/Kathmandu
+locale:              en_us # eg. en_us
+name:				         Wladimir Valdenegro
+title:               Wladimir Valdenegro
+tagline:             'Aspiring Engineer'
+description:         'My E-Portfolio'
 url:                 site url
 rss:                 rss feed url
 baseurl:             '/'
