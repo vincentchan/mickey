@@ -8,12 +8,12 @@ permalink:           /:title
 relative_permalinks: true
 
 # Setup
-timezone:            your timezone # eg. Asia/Kathmandu
-locale:              your locale language # eg. en_us
-name:				         site name
-title:               site title
-tagline:             'tagline'
-description:         'description'
+timezone:            United States/Miami, Fl # eg. Asia/Kathmandu
+locale:              en_us # eg. en_us
+name:				         Wladimir Valdenegro
+title:               Wladimir Valdenegro
+tagline:             'Aspiring Engineer'
+description:         'My E-Portfolio'
 url:                 site url
 rss:                 rss feed url
 baseurl:             '/'
@@ -25,8 +25,8 @@ icon:                your site icon path # /assets/img/icon.png [best 300px X 30
 disqus:              disqus_shortname # get it on https://disqus.com/admin/
 
 author:
-  name:           	 your name
-  url:            	 your site url
+  name:           	 Wladimir Valdenegro
+  url:            	 wvald.github.io
   facebook:          username
   twitter:           username
   google_plus:       username
@@ -40,7 +40,7 @@ fb_appid:            your facebook app id
 
 # Server
 destination:      	 ./_site
-exclude:          	 [".editorconfig", ".gitignore", "bower.json", "composer.json", "CONTRIBUTING.md", "CNAME", "LICENSE", "Gruntfile.js", "package.json", "node_modules", "README.md", "sass", "haml"]
+exclude:          	 [".editorconfig", ".gitignore", "bower.json", "composer.json", "CONTRIBUTING.md", "CNAME", "LICENSE", "Gruntfile.js", "package.json", "node_modules", "README.md", "sass", "haml", "fiuasme"]
 port:             	 9001
 
 defaults:
