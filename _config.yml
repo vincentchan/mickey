@@ -25,8 +25,8 @@ icon:                your site icon path # /assets/img/icon.png [best 300px X 30
 disqus:              disqus_shortname # get it on https://disqus.com/admin/
 
 author:
-  name:           	 your name
-  url:            	 your site url
+  name:           	 Wladimir Valdenegro
+  url:            	 wvald.github.io
   facebook:          username
   twitter:           username
   google_plus:       username
