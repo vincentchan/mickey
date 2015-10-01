@@ -1,5 +1,5 @@
 var gulp = require('gulp'),
-    browserSync = require('browser-sync'),
+    browserSync = require('browser-sync').create(),
     sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     minifycss = require('gulp-minify-css'),
@@ -24,17 +24,10 @@ gulp.task('jekyll-build', function (done) {
 });
 
 /**
- * Rebuild Jekyll & do page reload
- */
-gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
-    browserSync.reload();
-});
-
-/**
  * Wait for jekyll-build, then launch the Server
  */
 gulp.task('browser-sync', ['styles', 'jekyll-build'], function() {
-  browserSync({
+  browserSync.init({
     server: {
       baseDir: '_site'
     },
@@ -83,18 +76,29 @@ gulp.task("thumbnails", function () {
 
 /**
  * Watch scss files for changes & recompile
- * Watch html/md files, run jekyll & reload BrowserSync
+ * Watch html/md files, run jekyll
+ * Watch _site generation, reload BrowserSync
  */
 gulp.task('watch', function() {
   gulp.watch('_scss/**/*.scss', ['styles']);
   gulp.watch('assets/images/hero/*.{jpg,png}', ['thumbnails']);
-  gulp.watch(['*.html', '*.txt', 'about/**', '_posts/*.markdown', 'assets/javascripts/**/**.js', 'assets/images/**', 'assets/fonts/**', '_layouts/**','_includes/**', 'assets/css/**'], ['jekyll-rebuild']);
+  gulp.watch(['*.html',
+          '*.txt',
+          'about/**',
+          '_posts/*.markdown',
+          'assets/javascripts/**/**.js',
+          'assets/images/**',
+          'assets/fonts/**',
+          '_layouts/**',
+          '_includes/**',
+          'assets/css/**'
+        ],
+        ['jekyll-build']);
+  gulp.watch("_site/index.html").on('change', browserSync.reload);
 });
 
 /**
  * Default task, running just `gulp` will compile the sass,
  * compile the jekyll site, launch BrowserSync & watch files.
  */
-gulp.task('default', ['styles', 'thumbnails', 'browser-sync', 'watch'], function() {
-
-});
+gulp.task('default', ['thumbnails', 'browser-sync', 'watch']);
