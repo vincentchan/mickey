@@ -37,8 +37,15 @@
   }
 }
 
-.section--last {
-  background-color:#000;
+  .section--last {
+    position: relative;
+    clear: both;
+    padding: 1.5rem 0 6rem;
+    background: #530D0D;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    background-color: #000;
+    display: block;
 }
 
 // Inspired by SQUARESPACE
