@@ -2806,7 +2806,7 @@ a:hover
 {
     height: 44px;
     width: 44px;
-    border-radius: 50%;
+    border-radius: 15px;
 }
 
 .modal-toggle-wrapper
@@ -2947,7 +2947,8 @@ a:hover
 {
     position: absolute;
     top: 0;
-    background-color: #222;
+    border-radius: 15px;
+    background-color:rgba(0, 0, 0, 0.25);
     -webkit-transform: scale(1);
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
