@@ -34,7 +34,7 @@ html {
   font-family: $body-primary-font;
   font-size: $baseFontSize / 16 * 100%; // 14px
   font-weight: 400;
-  color: $text-color;
+  color: $white;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   font-feature-settings: "kern" 1;
@@ -190,14 +190,6 @@ code {
   vertical-align: bottom;
 }
 
-hr {
-  border-color: #d5d5d5;
-  padding: 0;
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
-  margin: $leading 0;
-}
 
 /* Leading paragraph text */
 
