@@ -2149,13 +2149,13 @@ a:hover
 
 .section-gradient--darker:before, .section-gradient--darker:after
 {
-    opacity: 1;
+    opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
 .section-gradient--lighter:before, .section-gradient--lighter:after
 {
-    opacity: 0.4;
+    opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
 }
 
