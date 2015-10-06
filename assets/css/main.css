@@ -23,11 +23,17 @@ footer,
 header,
 hgroup,
 main,
-nav,
+
 section,
 summary
 {
     background-color: #000;
+    display: block;
+}
+
+nav
+{
+    background-color: transparent;
     display: block;
 }
 
