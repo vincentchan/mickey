@@ -2,7 +2,9 @@
 
 This was based on [Mickey] (https://github.com/vincentchan/mickey) theme
 
-## Author
+**** I am still strugling to customize it to my needs (Oct/06/2015)
+
+## Initial Author
 
 **Vincent Chan**
 - <https://github.com/vincentchan>
