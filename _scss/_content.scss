@@ -119,7 +119,7 @@
 
   .postArticle-wrapper {
     position: relative;
-    background: $white;
+    background: $black;
     width: 100%;
     padding-bottom: 2*$leading;
     box-shadow: 0 1px 4px rgba(0,0,0,.2);
@@ -131,7 +131,7 @@
   }
 
   .postArticle a {
-    color: $black;
+    color: $white;
     background: transparent;
   }
 
@@ -219,7 +219,7 @@
 // Footer
 .section--footer {
   width: 100%;
-  background: $white;
+  background: $black;
   padding: $leading 0 2*$leading;
   position: relative;
   z-index: $zIndex-4--posts-wrapper;
