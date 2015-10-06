@@ -2818,7 +2818,6 @@ a:hover
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 60%;
-    border-radius: 20px;
     background-color:rgba(0, 0, 0, 0.25);
     cursor: pointer;
     -webkit-transform: scale(1);
@@ -2854,7 +2853,7 @@ a:hover
     display: block;
     width: 30px;
     height: 2px;
-    background: transparent;
+    background-color:rgba(0, 0, 0, 0.25);
     -webkit-transition: background 0.3s;
     transition: background 0.3s;
     z-index: inherit;
@@ -2865,7 +2864,7 @@ a:hover
     content: '';
     position: absolute;
     left: 0;
-    background: inherit;
+    background-color:rgba(0, 0, 0, 0.25);
     width: 100%;
     height: 100%;
     -webkit-transform: translateZ(0);
@@ -2902,12 +2901,12 @@ a:hover
 
 .modal-toggle-close-wrapper.active .modal-toggle-close
 {
-    background: transparent;
+    background-color:rgba(0, 0, 0, 0.25);
 }
 
 .modal-toggle-close-wrapper.active .modal-toggle-close:before, .modal-toggle-close-wrapper.active .modal-toggle-close:after
 {
-    background: #fff;
+    background-color:rgba(0, 0, 0, 0.25);
 }
 
 .modal-toggle-close-wrapper.active .modal-toggle-close:before
@@ -2930,7 +2929,7 @@ a:hover
 {
     position: absolute;
     top: 0;
-    background-color: rgba(34, 34, 34, 0.9);
+    background-color:rgba(0, 0, 0, 0.25);
     -webkit-transform: scale(1);
     -webkit-transition: all 0.3s ease-out;
     z-index: 600;
