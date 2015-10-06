@@ -316,13 +316,15 @@
 //// Post content area
 .section--last {
   position: relative;
+  background: #000;
+  color: #fff;
   clear: both;
   padding: 1*$leading 0 4*$leading;
-  background: $BLACK;
+  
 }
 
 .content-author {
-  border-top: 1px solid $gray-lighter;
+  border-top: 0px solid $gray-lighter;
   margin-top: 2*$leading;
   padding-top: 1*$leading;
 }
@@ -344,10 +346,10 @@
 
 .section--prePost .section-title a {
   background: transparent;
-  color: rgba($white, 0.9);
+  color: rgba(250, 250, 250, 250.9);
 
   &:hover {
-    color: rgba($white, 1);
+    color: rgba(250,250, 250, 1);
   }
 }
 
