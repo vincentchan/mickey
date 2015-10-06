@@ -2013,13 +2013,11 @@ a:hover
     top: 0;
     position: relative;
     color: #222;
-    background-color: #0f141f;
 }
 
 .section--first,
 .section-backgroundImage
 {
-    color: #000;
     height: 28.5rem;
 }
 
@@ -2028,7 +2026,6 @@ a:hover
     .section--first,
   .section-backgroundImage
     {
-        color: #000;
         height: 21rem;
     }
 }
@@ -2037,6 +2034,7 @@ a:hover
 .section--frontpage ~ .post-featuredImage
 {
     color: #000;
+    background-color: #0f141f;
     height: 35rem;
 }
 
