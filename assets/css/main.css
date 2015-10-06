@@ -471,7 +471,7 @@ code
 
 hr
 {
-    border-color: #d5d5d5;
+    border-color: #e81062;
 }
 
 /* Leading paragraph text */
@@ -592,6 +592,7 @@ body
 .brandLogo
 {
     background-image: url(../images/logo-white.svg);
+    background-color: transparent;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 0 0;
