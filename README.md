@@ -1,6 +1,6 @@
 # Mickey Black
 
-This was based on [this] (https://github.com/vincentchan/mickey) theme
+This was based on [Mickey] (https://github.com/vincentchan/mickey) theme
 
 ## Author
 
