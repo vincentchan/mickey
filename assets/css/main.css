@@ -288,7 +288,7 @@ html {
   font-family: "Source Serif Pro", serif;
   font-size: 137.5%;
   font-weight: 400;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(250, 250, 250, 0.8);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   font-feature-settings: "kern" 1;
@@ -2645,7 +2645,7 @@ a:hover
     position: relative;
     clear: both;
     padding: 1.5rem 0 6rem;
-    background: #fff;
+    background: #000;
 }
 
 .content-author
