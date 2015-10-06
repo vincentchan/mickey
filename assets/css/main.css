@@ -1704,7 +1704,7 @@ a:hover
 .sidebar::-webkit-scrollbar
 {
     width: 12px;
-    background-color: #fff;
+    background-color: #0D4746;
 }
 
 .sidebar::-webkit-scrollbar-track
@@ -1715,9 +1715,9 @@ a:hover
 
 .sidebar::-webkit-scrollbar-thumb
 {
-    border-radius: 10px;
+    border-radius: 5px;
     -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 1);
-    background-color: #fff;
+    background-color: #1F3D3D;
 }
 
 .sidebar--left
