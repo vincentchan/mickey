@@ -595,6 +595,32 @@ body
     }
 }
 
+::-webkit-scrollbar{
+width:6px;
+height:8px;
+-webkit-border-radius:20px;}
+::-webkit-scrollbar-button:start:decrement
+::-webkit-scrollbar-button:end:increment{display:block;
+height:0;
+background-color:transparent;}
+::-webkit-scrollbar-track-piece{background-color:{color:background};
+-webkit-border-radius:0;
+-webkit-border-bottom-right-radius:3px;
+-webkit-border-bottom-left-radius:3px;}
+::-webkit-scrollbar-thumb:vertical{
+width:6px;
+height:60px;
+-webkit-border-radius:20px;
+background-color:{color:Scrollbar};
+-webkit-box-shadow: inset 0 0 6px rgba(65, 65, 65, 1);}
+::-webkit-scrollbar-thumb:horizontal{
+width:60px;
+-webkit-border-radius:20px;
+background-color:{color:Scrollbar};}
+::-webkit-scrollbar-track {
+-webkit-box-shadow: inset 0 0 6px rgba(25, 25, 25, 1);}
+
+
 .brandLogo
 {
     background-image: url(../images/logo-white.svg);
