@@ -1789,7 +1789,7 @@ a:hover
     white-space: nowrap;
     cursor: pointer;
     border-radius: 20px;
-    background-color:rgba(0, 0, 0, 0.25)
+    background-color:rgba(0, 0, 0, 0.25);
 }
 
 .sidebar-toggle-wrapper:hover .sidebar-toggle
@@ -2818,7 +2818,8 @@ a:hover
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 60%;
-    background-color: transparent;
+    border-radius: 20px;
+    background-color:rgba(0, 0, 0, 0.25);
     cursor: pointer;
     -webkit-transform: scale(1);
     -webkit-transition: all 0.3s ease-out;
