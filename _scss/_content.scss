@@ -94,7 +94,7 @@
 
   li:nth-child(2).block,
   li:nth-child(3).block {
-    width: 50%;
+    width: 100%;
 
     .postArticle-image {
       padding-top: 50%;
@@ -109,13 +109,38 @@
     }
   }
 
-  li {
+.blockGroup-list li:nth-child(2).block .postArticle-image
+{
+    padding-top: 25%;
+    background-size: 50%;
+    background-position: left;
+}
 
-    .postArticle-title {
-      font-size: $font-XS;
-      line-height: 1.5;
+.blockGroup-list li:nth-child(3).block .postArticle-image
+{
+    padding-top: 25%;
+    background-size: 50%;
+    background-position: right;
+}
+
+.blockGroup-list li:nth-child(2).block .postArticle-title
+{
+    display: block;
+    color: #fff;
+    margin-top: 0.75rem;
+    text-align: left;
+    font-weight: 300;
     }
   }
+
+.blockGroup-list li:nth-child(3).block .postArticle-title
+{
+    display: block;
+    color: #fff;
+    margin-top: 0.75rem;
+    font-weight: 300;
+    text-align: right;
+}
 
   .postArticle-wrapper {
     position: relative;
@@ -131,7 +156,7 @@
   }
 
   .postArticle a {
-    color: $white;
+    color: $black;
     background: transparent;
   }
 
