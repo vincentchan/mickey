@@ -2079,7 +2079,8 @@ a:hover
 .section-backgroundImage,
 .section--about ~ .post-featuredImage
 {
-    height: 36rem;
+    background: url(https://cloud.githubusercontent.com/assets/14811095/10153632/eff1743c-6666-11e5-87bc-b6cef4930b1c.jpg);
+    height: 35rem;
 }
 
 @media (max-width: 767px)
@@ -2088,6 +2089,7 @@ a:hover
   .section-backgroundImage,
   .section--about ~ .post-featuredImage
     {
+        background: url(https://cloud.githubusercontent.com/assets/14811095/10153632/eff1743c-6666-11e5-87bc-b6cef4930b1c.jpg);
         height: 30rem;
     }
 }
