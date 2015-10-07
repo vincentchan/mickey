@@ -2060,6 +2060,7 @@ a:hover
 .section--frontpage ~ .post-featuredImage
 {
     color: #000;
+    background: url(https://cloud.githubusercontent.com/assets/14811095/10153632/eff1743c-6666-11e5-87bc-b6cef4930b1c.jpg);
     background-color: #0f141f;
     height: 35rem;
 }
