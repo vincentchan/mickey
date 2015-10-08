@@ -2423,6 +2423,14 @@ a:hover
     background-position: right;
 }
 
+.blockGroup-list li:nth-child(2) .post-excerpt
+{
+    position: absolute;
+    margin-top: -250px;
+    margin-left: 580px;
+}
+
+
 .blockGroup-list li:nth-child(2).block .postArticle-title,
 .blockGroup-list li:nth-child(3).block .postArticle-title
 {
