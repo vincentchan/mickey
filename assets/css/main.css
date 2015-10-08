@@ -2378,7 +2378,35 @@ a:hover
     }
 }
 
+.blockGroup-list li:nth-child(1).block
+{
+    
+width: 100%;
+}
 
+
+.blockGroup-list li:nth-child(1).block .postArticle-image
+{
+padding-top: 50%;    
+background-size: 50%;
+background-position: right;
+}
+
+
+
+@media (max-width: 767px)
+{
+.blockGroup-list li:nth-child(1).block .postArticle-image
+    {
+padding-top: 50%;
+background-size: 50%;
+background-position: right;   }
+
+.blockGroup-list li:nth-child(1).block .postArticle-title
+{
+color: #fff;
+font-size: 1rem;
+}
 
 .blockGroup-list li:nth-child(2).block,
 .blockGroup-list li:nth-child(3).block
@@ -2485,7 +2513,42 @@ a:hover
     text-align: right;
 }
 
+.blockGroup-list .postArticle-image {
+  background-size: 100%;
+    background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 50%;
+  -webkit-transition-property: all, left, top, width;
+  -webkit-transition-duration: .5s, .1s, .1s, .1s;
+  -webkit-transition-timing-function: cubic-bezier(0.33, 0, 0.2, 1);
+  -webkit-transition-delay: 0;
+  -moz-transition-property: all, left, top, width;
+  -moz-transition-duration: .5s, .1s, .1s, .1s;
+  -moz-transition-timing-function: cubic-bezier(0.33, 0, 0.2, 1);
+  -moz-transition-delay: 0;
+  -ms-transition-property: all, left, top, width;
+  -ms-transition-duration: .5s, .1s, .1s, .1s;
+  -ms-transition-timing-function: cubic-bezier(0.33, 0, 0.2, 1);
+  -ms-transition-delay: 0;
+  -o-transition-property: all, left, top, width;
+  -o-transition-duration: .5s, .1s, .1s, .1s;
+  -o-transition-timing-function: cubic-bezier(0.33, 0, 0.2, 1);
+  -o-transition-delay: 0;
+  -webkit-transition-property: all, left, top, width;
+          transition-property: all, left, top, width;
+  -webkit-transition-duration: .5s, .1s, .1s, .1s;
+          transition-duration: .5s, .1s, .1s, .1s;
+  -webkit-transition-timing-function: cubic-bezier(0.33, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.33, 0, 0.2, 1);
+}
 
+@media (max-width: 767px)
+{
+    .blockGroup-list .postArticle-image
+    {
+        padding-top: 50%;
+    }
+}
 
 .blockGroup-list li:nth-child(2).block .block-postMeta
 {
