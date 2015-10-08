@@ -2463,23 +2463,7 @@ a:hover
     line-height: 1.5;
 }
 
-.blockGroup-list .postArticle-wrapper
-{
-    position: relative;
-    background: #000;
-    width: 100%;
-    padding-bottom: 3rem;
-    -webkit-box-shadow: 4px 4px 4px 4px rgba(255, 255, 255, 0);
-    box-shadow: 4px 4px 4px 4px rgba(255, 255, 255, 0);
-}
 
-.blockGroup-list .postArticle-wrapper:hover
-{
-    -webkit-transition: -webkit-box-shadow 0.2s cubic-bezier(0.4, 0.4, 0.4, 0.4, 1);
-    transition: box-shadow 0.2s cubic-bezier(0.4, 0.4, 0.4, 0.4, 1);
-    -webkit-box-shadow: 4px 4px 4px 4px rgba(255, 255, 255, 0.8);
-    box-shadow: 4px 4px 24px 4px rgba(255, 255, 255, 0.8);
-}
 
 .blockGroup-list .postArticle a
 {
