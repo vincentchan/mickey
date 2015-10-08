@@ -2404,27 +2404,27 @@ a:hover
     font-size: 1rem;
 }
 
-.blockGroup-list li:nth-child(2).block,
-.blockGroup-list li:nth-child(3).block
+.blockGroup-list li:nth-child(2n).block,
+.blockGroup-list li:nth-child(2n+1).block
 {
     width: 100%;
 }
 
-.blockGroup-list li:nth-child(2).block .postArticle-image
+.blockGroup-list li:nth-child(2n).block .postArticle-image
 {
-    padding-top: 25%;
+    padding-top: 20%;
     background-size: 50%;
     background-position: left;
 }
 
-.blockGroup-list li:nth-child(3).block .postArticle-image
+.blockGroup-list li:nth-child(2n+1).block .postArticle-image
 {
     padding-top: 25%;
     background-size: 50%;
     background-position: right;
 }
 
-.blockGroup-list li:nth-child(2) .post-excerpt
+.blockGroup-list li:nth-child(2n) .post-excerpt
 {
     position: absolute;
     margin-top: -300px;
@@ -2433,7 +2433,7 @@ a:hover
     padding-right: 25px;
 }
 
-.blockGroup-list li:nth-child(3) .post-excerpt
+.blockGroup-list li:nth-child(2n+1) .post-excerpt
 {
     position: absolute;
     margin-top: -300px;
@@ -2442,16 +2442,16 @@ a:hover
     padding-right: 25px;
 }
 
-.blockGroup-list li:nth-child(2).block .postArticle-title,
-.blockGroup-list li:nth-child(3).block .postArticle-title
+.blockGroup-list li:nth-child(2n).block .postArticle-title,
+.blockGroup-list li:nth-child(2n+1).block .postArticle-title
 {
     font-size: 1rem;
 }
 
 @media (max-width: 767px)
 {
-    .blockGroup-list li:nth-child(2).block,
-  .blockGroup-list li:nth-child(3).block
+    .blockGroup-list li:nth-child(2n).block,
+  .blockGroup-list li:nth-child(2n+1).block
     {
         width: 100%;
     }
@@ -2491,7 +2491,7 @@ a:hover
     text-align: center;
 }
 
-.blockGroup-list li:nth-child(2).block .postArticle-title
+.blockGroup-list li:nth-child(2n).block .postArticle-title
 {
     display: block;
     color: #fff;
@@ -2500,7 +2500,7 @@ a:hover
     font-weight: 300;
 }
 
-.blockGroup-list li:nth-child(3).block .postArticle-title
+.blockGroup-list li:nth-child(2n+1).block .postArticle-title
 {
     display: block;
     color: #fff;
@@ -2546,7 +2546,7 @@ a:hover
     }
 }
 
-.blockGroup-list li:nth-child(2).block .block-postMeta
+.blockGroup-list li:nth-child(2n).block .block-postMeta
 {
     display: block;
     color: #fff;
@@ -2555,7 +2555,7 @@ a:hover
     text-align: left;
 }
 
-.blockGroup-list li:nth-child(3).block .block-postMeta
+.blockGroup-list li:nth-child(2n+1).block .block-postMeta
 {
     display: block;
     bottom: 0;
