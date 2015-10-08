@@ -2386,7 +2386,7 @@ a:hover
 .blockGroup-list li:nth-child(1).block .postArticle-image
 {
     padding-top: 30%;
-    position: right;
+    position: center;
 }
 
 @media (max-width: 767px)
