@@ -2385,8 +2385,9 @@ a:hover
  
 .blockGroup-list li:nth-child(1).block .postArticle-image
 {
-    padding-top: 30%;
-    position: center;
+    padding-top: 25%;
+    background-size: 50%;
+    background-position: left;
 }
 
 @media (max-width: 767px)
@@ -2401,12 +2402,6 @@ a:hover
 {
    color: #fff;
     font-size: 1rem;
-}
-
-.blockGroup-list li:nth-child(1).block .postArticle-title
-{
-color: #fff;
-font-size: 1rem;
 }
 
 .blockGroup-list li:nth-child(2).block,
