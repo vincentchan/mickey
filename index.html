@@ -29,7 +29,7 @@ title: Photorgasms
               <article class="postArticle postArticle--short">
                 {% if post.image.feature %}
                   <a href="{{ post.url }}">
-                    <div class="postArticle-image" style="background-image:url('{{ post.image.feature | prepend: site.baseurl_featured_img }}')">{{ post.content | strip_html | truncatewords: 50 }}  
+                    <div class="postArticle-image" style="background-image:url('{{ post.image.feature | prepend: site.baseurl_featured_img }}')"><a class="post.content" href="{{ post.content | strip_html | truncatewords: 50 }}"></a>  
                     </div>
                   </a>
                 {% else %}
