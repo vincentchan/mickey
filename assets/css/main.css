@@ -2426,10 +2426,20 @@ a:hover
 .blockGroup-list li:nth-child(2) .post-excerpt
 {
     position: absolute;
-    margin-top: -250px;
+    margin-top: -300px;
     margin-left: 580px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
+.blockGroup-list li:nth-child(3) .post-excerpt
+{
+    position: absolute;
+    margin-top: -300px;
+    margin-right: 580px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
 
 .blockGroup-list li:nth-child(2).block .postArticle-title,
 .blockGroup-list li:nth-child(3).block .postArticle-title
