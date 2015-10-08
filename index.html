@@ -29,7 +29,7 @@ title: Photorgasms
               <article class="postArticle postArticle--short">
                 {% if post.image.feature %}
                   <a href="{{ post.url }}">
-                    <div class="postArticle-image" style="background-image:url('{{ post.image.feature | prepend: site.baseurl_featured_img }}')"><div class="post.content" style="{{ post.content | strip_html | truncatewords: 50 }}"></div>  
+                    <div class="postArticle-image" style="background-image:url('{{ post.image.feature | prepend: site.baseurl_featured_img }}')">  
                     </div>
                   </a>
                 {% else %}
@@ -39,6 +39,9 @@ title: Photorgasms
                 </a>
                 {% endif %}
                 <a class="postArticle-title" href="{{ post.url }}">{{ post.title }}</a>
+                <section class="post-excerpt">
+                <p>{{ post.content | strip_html | truncatewords:40 }}</p>
+            </section>
               </article>
               <div class="block-postMeta">{{ post.date | date_to_string }}</div>
             </div>
