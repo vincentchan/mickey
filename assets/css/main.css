@@ -2512,7 +2512,7 @@ a:hover
   background-size: 100%;
     background-repeat: no-repeat;
   background-position: center;
-  padding-top: 100%;
+  padding-top: 50%;
   -webkit-transition-property: all, left, top, width;
   -webkit-transition-duration: .5s, .1s, .1s, .1s;
   -webkit-transition-timing-function: cubic-bezier(0.33, 0, 0.2, 1);
