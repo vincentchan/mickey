@@ -2,7 +2,7 @@
 
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 
-html
+html(1).block .postArticle-title
 {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
@@ -310,7 +310,6 @@ p
     line-height: 1.5rem;
     letter-spacing: .01rem;
     margin-top: 1.5rem;
-    margin-left: 10px;
     margin-bottom: 0;
 }
 
@@ -596,49 +595,31 @@ body
     }
 }
 
-::-webkit-scrollbar
-{
-    width: 6px;
-    height: 8px;
-    -webkit-border-radius: 20px;
-}
-
+::-webkit-scrollbar{
+width:6px;
+height:8px;
+-webkit-border-radius:20px;}
 ::-webkit-scrollbar-button:start:decrement
-::-webkit-scrollbar-button:end:increment
-{
-    display: block;
-    height: 0;
-    background-color: transparent;
-}
+::-webkit-scrollbar-button:end:increment{display:block;
+height:0;
+background-color:transparent;}
+::-webkit-scrollbar-track-piece{background-color:{color:background};
+-webkit-border-radius:0;
+-webkit-border-bottom-right-radius:3px;
+-webkit-border-bottom-left-radius:3px;}
+::-webkit-scrollbar-thumb:vertical{
+width:6px;
+height:60px;
+-webkit-border-radius:20px;
+background-color:{color:Scrollbar};
+-webkit-box-shadow: inset 0 0 6px rgba(65, 65, 65, 1);}
+::-webkit-scrollbar-thumb:horizontal{
+width:60px;
+-webkit-border-radius:20px;
+background-color:{color:Scrollbar};}
+::-webkit-scrollbar-track {
+-webkit-box-shadow: inset 0 0 6px rgba(25, 25, 25, 1);}
 
-::-webkit-scrollbar-track-piece
-{
-    background-color: {color:background};
-    -webkit-border-radius: 0;
-    -webkit-border-bottom-right-radius: 3px;
-    -webkit-border-bottom-left-radius: 3px;
-}
-
-::-webkit-scrollbar-thumb:vertical
-{
-    width: 6px;
-    height: 60px;
-    -webkit-border-radius: 20px;
-    background-color: {color:Scrollbar};
-    -webkit-box-shadow: inset 0 0 6px rgba(65, 65, 65, 1);
-}
-
-::-webkit-scrollbar-thumb:horizontal
-{
-    width: 60px;
-    -webkit-border-radius: 20px;
-    background-color: {color:Scrollbar};
-}
-
-::-webkit-scrollbar-track
-{
-    -webkit-box-shadow: inset 0 0 6px rgba(25, 25, 25, 1);
-}
 
 .brandLogo
 {
@@ -1808,7 +1789,7 @@ a:hover
     white-space: nowrap;
     cursor: pointer;
     border-radius: 20px;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color:rgba(0, 0, 0, 0.25);
 }
 
 .sidebar-toggle-wrapper:hover .sidebar-toggle
@@ -2079,7 +2060,7 @@ a:hover
 .section--frontpage ~ .post-featuredImage
 {
     color: #000;
-    background: url(https://cloud.githubusercontent.com/assets/14811095/10153632/eff1743c-6666-11e5-87bc-b6cef4930b1c.jpg);
+    background-image: url(https://cloud.githubusercontent.com/assets/14811095/10153632/eff1743c-6666-11e5-87bc-b6cef4930b1c.jpg);
     background-color: #0f141f;
     height: 35rem;
 }
@@ -2098,7 +2079,7 @@ a:hover
 .section-backgroundImage,
 .section--about ~ .post-featuredImage
 {
-    height: 35rem;
+    height: 36rem;
 }
 
 @media (max-width: 767px)
@@ -2375,7 +2356,7 @@ a:hover
 
 .blockGroup-list li
 {
-    padding: 0 0px;
+    padding: 0 10px;
 }
 
 .blockGroup-list .block {
@@ -2404,9 +2385,8 @@ a:hover
 
 .blockGroup-list li:nth-child(1).block .postArticle-image
 {
-    padding-top: 25%;
-    background-size: 50%;
-    background-position: left;
+    padding-top: 30%;
+    position: center;
 }
 
 @media (max-width: 767px)
@@ -2441,10 +2421,20 @@ a:hover
 
 .blockGroup-list li:nth-child(2n).block .postArticle-image
 {
-    padding-top: 15%;
+    padding-top: 25%;
     background-size: 50%;
     background-position: left;
 }
+
+@media (max-width: 767px)
+{
+    .blockGroup-list li:nth-child(2n).block .postArticle-image
+    {
+       
+       padding-top: 50%;
+    }
+}
+
 
 .blockGroup-list li:nth-child(2n+3).block .postArticle-image
 {
@@ -2453,19 +2443,32 @@ a:hover
     background-position: right;
 }
 
+@media (max-width: 767px)
+{
+    .blockGroup-list li:nth-child(2n+3).block .postArticle-image
+    {
+        padding-top: 50%;
+    }
+}
+
 .blockGroup-list li:nth-child(2n) .post-excerpt
 {
+    display: block;
+    clear: right;
+    float: right;
     margin-top: -260px;
-    margin-left: 580px;
-    padding-left: -5px;
+    margin-left: 550px;
+    padding-left: 5px;
     padding-right: 5px;
     text-align: left;
 }
 
+
 .blockGroup-list li:nth-child(2n+3) .post-excerpt
-{
-    margin-top: -350px;
-    margin-right: 600px;
+{   
+    display: block;
+    margin-top: -300px;
+    margin-right: 550px;
     padding-left: 5px;
     padding-right: 5px;
     text-align: right;
@@ -2480,8 +2483,8 @@ a:hover
 
 @media (max-width: 767px)
 {
-    .blockGroup-list li:nth-child(2).block,
-  .blockGroup-list li:nth-child(3).block
+    .blockGroup-list li:nth-child(2n).block,
+  .blockGroup-list li:nth-child(2n+3).block
     {
         width: 100%;
     }
@@ -2543,7 +2546,7 @@ a:hover
   background-size: 100%;
     background-repeat: no-repeat;
   background-position: center;
-  padding-top: 50%;
+  padding-top: 100%;
   -webkit-transition-property: all, left, top, width;
   -webkit-transition-duration: .5s, .1s, .1s, .1s;
   -webkit-transition-timing-function: cubic-bezier(0.33, 0, 0.2, 1);
@@ -2868,7 +2871,7 @@ a:hover
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 60%;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color:rgba(0, 0, 0, 0.25);
     cursor: pointer;
     -webkit-transform: scale(1);
     -webkit-transition: all 0.3s ease-out;
@@ -2903,7 +2906,7 @@ a:hover
     display: block;
     width: 30px;
     height: 2px;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color:rgba(0, 0, 0, 0.25);
     -webkit-transition: background 0.3s;
     transition: background 0.3s;
     z-index: inherit;
@@ -2914,7 +2917,7 @@ a:hover
     content: '';
     position: absolute;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color:rgba(0, 0, 0, 0.25);
     width: 100%;
     height: 100%;
     -webkit-transform: translateZ(0);
@@ -2951,12 +2954,12 @@ a:hover
 
 .modal-toggle-close-wrapper.active .modal-toggle-close
 {
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color:rgba(0, 0, 0, 0.25);
 }
 
 .modal-toggle-close-wrapper.active .modal-toggle-close:before, .modal-toggle-close-wrapper.active .modal-toggle-close:after
 {
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color:rgba(0, 0, 0, 0.25);
 }
 
 .modal-toggle-close-wrapper.active .modal-toggle-close:before
@@ -2979,7 +2982,7 @@ a:hover
 {
     position: absolute;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color:rgba(0, 0, 0, 0.25);
     -webkit-transform: scale(1);
     -webkit-transition: all 0.3s ease-out;
     z-index: 600;
@@ -2997,7 +3000,7 @@ a:hover
     position: absolute;
     top: 0;
     border-radius: 15px;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color:rgba(0, 0, 0, 0.25);
     -webkit-transform: scale(1);
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
