@@ -2071,8 +2071,8 @@ a:hover
   .section--frontpage ~ .post-featuredImage
     {
         color: #000;
-        height: 15rem;
         background-size: 100%;
+        background-color: #0f141f;
         background-repeat: no-repeat;
     }
 }
