@@ -1,22 +1,38 @@
 {
-  "name": "Mickey",
+  "name": "PHOTORGASMS",
   "version": "0.0.1",
-  "description": "A minimal one-column, responsive theme for Jekyll",
-  "homepage": "http://vincentchan.github.io/mickey",
-  "author": "Vincent Chan",
+  "description": "art journal",
+  "homepage": "http://sunbliss.github.io/",
+  "author": "Anna Prigkipaki",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vincentchan"
+    "url": "https://github.com/sunbliss"
   },
   "devDependencies": {
-    "browser-sync": "~2.9.7",
+    "browser-sync": "~1.7.1",
     "concurrent-transform": "^1.0.0",
-    "gulp": "^3.9.0",
-    "gulp-autoprefixer": "~3.0.2",
+    "gulp": "^3.8.11",
+    "gulp-autoprefixer": "~2.0.0",
     "gulp-image-resize": "^0.6.0",
-    "gulp-minify-css": "~1.2.1",
-    "gulp-postcss": "~6.0.0",
-    "gulp-rename": "~1.2.2",
-    "gulp-sass": "^2.0.4"
-  }
+    "gulp-minify-css": "~0.3.11",
+    "gulp-postcss": "~3.0.0",
+    "gulp-rename": "~1.2.0",
+    "gulp-ruby-sass": "~1.0.0-alpha"
+  },
+  "main": "gulpfile.js",
+  "dependencies": {
+    "concurrent-transform": "^1.0.0",
+    "browser-sync": "^1.7.3",
+    "gulp": "^3.8.11",
+    "gulp-postcss": "^3.0.0",
+    "gulp-image-resize": "^0.6.0",
+    "gulp-autoprefixer": "^2.0.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-minify-css": "^0.3.13",
+    "gulp-ruby-sass": "^1.0.0-alpha.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "ISC"
 }
