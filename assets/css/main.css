@@ -2072,6 +2072,7 @@ a:hover
     {
         color: #000;
         height: 15rem;
+        size: 100%;
     }
 }
 
@@ -2422,8 +2423,8 @@ a:hover
 .blockGroup-list li:nth-child(2n).block .postArticle-image
 {
     padding-top: 25%;
-    background-size: 50%;
-    background-position: left;
+    background-size: 100%;
+    background-position: center;
 }
 
 @media (max-width: 767px)
@@ -2439,8 +2440,8 @@ a:hover
 .blockGroup-list li:nth-child(2n+3).block .postArticle-image
 {
     padding-top: 25%;
-    background-size: 50%;
-    background-position: right;
+    background-size: 100%;
+    background-position: center;
 }
 
 @media (max-width: 767px)
