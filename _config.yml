@@ -1,22 +1,22 @@
-
 # Syntax highlighting
-markdown:            redcarpet
-highlighter:         pygments
+markdown:  redcarpet
+highlighter:  pygments
 
 # Permalinks
 permalink:           /:title
 relative_permalinks: true
 
 # Setup
-timezone:            your timezone # eg. Asia/Kathmandu
-locale:              your locale language # eg. en_us
-name:				         site name
-title:               site title
-tagline:             'tagline'
-description:         'description'
-url:                 site url
+timezone: Europe/Greece
+locale:  en_us
+name: Anna 
+title: Photorgasms
+tagline: 'photos and more'
+description: 'aspiring photographer - art appreciator'
+url: http://sunbliss.github.io
+google_analytics:
 rss:                 rss feed url
-baseurl:             '/'
+baseurl: '/'
 baseurl_posts_img:   '/assets/images/posts/'
 baseurl_featured_img: '/assets/images/hero/'
 baseurl_featured_thumbnail: '/assets/images/thumbnail/'
@@ -25,18 +25,10 @@ icon:                your site icon path # /assets/img/icon.png [best 300px X 30
 disqus:              disqus_shortname # get it on https://disqus.com/admin/
 
 author:
-  name:           	 your name
-  url:            	 your site url
-  facebook:          username
-  twitter:           username
-  google_plus:       username
-  linkedin:          username
-  dribbble:          username
-  pinterest:         username
-  kiva:              username
-
-fb_admins:           your facebook profile id
-fb_appid:            your facebook app id
+  name:           	 Anna Prigkipaki
+  url:            	 http://sunbliss.github.io
+  flickr:          sunbliss
+ 
 
 # Server
 destination:      	 ./_site
