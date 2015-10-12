@@ -2072,7 +2072,7 @@ a:hover
     {
         color: #000;
         height: 15rem;
-        size: 100%;
+        background-size: 100%;
     }
 }
 
