@@ -2071,7 +2071,10 @@ a:hover
   .section--frontpage ~ .post-featuredImage
     {
         color: #000;
-        height: 15rem;
+        background-size: 100%;
+        background-color: #0f141f;
+        background-repeat: no-repeat;
+        height: 10rem;
     }
 }
 
@@ -2422,8 +2425,8 @@ a:hover
 .blockGroup-list li:nth-child(2n).block .postArticle-image
 {
     padding-top: 25%;
-    background-size: 50%;
-    background-position: left;
+    background-size: 100%;
+    background-position: center;
 }
 
 @media (max-width: 767px)
@@ -2439,8 +2442,8 @@ a:hover
 .blockGroup-list li:nth-child(2n+3).block .postArticle-image
 {
     padding-top: 25%;
-    background-size: 50%;
-    background-position: right;
+    background-size: 100%;
+    background-position: center;
 }
 
 @media (max-width: 767px)
@@ -2453,25 +2456,23 @@ a:hover
 
 .blockGroup-list li:nth-child(2n) .post-excerpt
 {
-    display: block;
-    clear: right;
-    float: right;
-    margin-top: -260px;
-    margin-left: 550px;
-    padding-left: 5px;
-    padding-right: 5px;
-    text-align: left;
+    position: relative;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
 }
 
 
 .blockGroup-list li:nth-child(2n+3) .post-excerpt
 {   
-    display: block;
-    margin-top: -300px;
-    margin-right: 550px;
-    padding-left: 5px;
-    padding-right: 5px;
-    text-align: right;
+    position: relative;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
 }
 
 
