@@ -91,7 +91,7 @@ h1
 {
     font-size: 2em;
     color: #fff;
-    background-image: url(https://cloud.githubusercontent.com/assets/14811095/10357772/b1485aaa-6d8e-11e5-973c-604c0e6d285d.png);
+        background-image: url(../images/photorgasms_logo.png);
     background-repeat: no-repeat;
     background-position: center;
     margin: 0.67em 0;
@@ -2060,7 +2060,7 @@ a:hover
 .section--frontpage ~ .post-featuredImage
 {
     color: #000;
-    background-image: url(https://cloud.githubusercontent.com/assets/14811095/10153632/eff1743c-6666-11e5-87bc-b6cef4930b1c.jpg);
+    background-image: url(../images/cliffs-edge.jpg);
     background-color: #0f141f;
     height: 35rem;
 }
