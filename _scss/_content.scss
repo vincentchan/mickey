@@ -64,7 +64,7 @@
 
   .block {
     display: block;
-    width: 25%;
+    width: 100%;
     margin-bottom: $leading;
     font-family: $title-secondary-font;
     display: -webkit-flex;
@@ -94,7 +94,7 @@
 
   li:nth-child(2).block,
   li:nth-child(3).block {
-    width: 50%;
+    width: 100%;
 
     .postArticle-image {
       padding-top: 50%;
@@ -109,17 +109,42 @@
     }
   }
 
-  li {
+.blockGroup-list li:nth-child(2).block .postArticle-image
+{
+    padding-top: 25%;
+    background-size: 50%;
+    background-position: left;
+}
 
-    .postArticle-title {
-      font-size: $font-XS;
-      line-height: 1.5;
+.blockGroup-list li:nth-child(3).block .postArticle-image
+{
+    padding-top: 25%;
+    background-size: 50%;
+    background-position: right;
+}
+
+.blockGroup-list li:nth-child(2).block .postArticle-title
+{
+    display: block;
+    color: #fff;
+    margin-top: 0.75rem;
+    text-align: left;
+    font-weight: 300;
     }
   }
 
+.blockGroup-list li:nth-child(3).block .postArticle-title
+{
+    display: block;
+    color: #fff;
+    margin-top: 0.75rem;
+    font-weight: 300;
+    text-align: right;
+}
+
   .postArticle-wrapper {
     position: relative;
-    background: $white;
+    background: $black;
     width: 100%;
     padding-bottom: 2*$leading;
     box-shadow: 0 1px 4px rgba(0,0,0,.2);
@@ -217,9 +242,9 @@
 }
 
 // Footer
-.section--footer {
+.section--footer { 
   width: 100%;
-  background: $white;
+  background: $black;
   padding: $leading 0 2*$leading;
   position: relative;
   z-index: $zIndex-4--posts-wrapper;
@@ -291,13 +316,15 @@
 //// Post content area
 .section--last {
   position: relative;
+  background: #000;
+  color: #fff;
   clear: both;
   padding: 1*$leading 0 4*$leading;
-  background: $white;
+  
 }
 
 .content-author {
-  border-top: 1px solid $gray-lighter;
+  border-top: 0px solid $gray-lighter;
   margin-top: 2*$leading;
   padding-top: 1*$leading;
 }
@@ -319,10 +346,10 @@
 
 .section--prePost .section-title a {
   background: transparent;
-  color: rgba($white, 0.9);
+  color: rgba(250, 250, 250, 250.9);
 
   &:hover {
-    color: rgba($white, 1);
+    color: rgba(250,250, 250, 1);
   }
 }
 
