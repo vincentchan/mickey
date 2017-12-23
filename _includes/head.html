@@ -30,14 +30,14 @@
   <meta name="twitter:creator" content="@{{ site.author.twitter }}">
   <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}">
   <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  <meta name="twitter:image" content="{% if page.image.feature %}{{ page.image.feature | prepend: site.baseurl_featured_img | prepend: site.url }}{% else %}{{ site.icon | prepend: site.baseurl | prepend: site.url }}{% endif %}">
+  <meta name="twitter:image" content="{% if page.image.feature %}{{ site.url }}{{ site.baseurl }}{{ site.baseurl_featured_img }}{{ page.image.feature }}{% else %}{{ site.icon | prepend: site.baseurl | prepend: site.url }}{% endif %}">
   <meta name="twitter:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
 
   <!-- Open graph -->
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}">
   <meta property="og:type" content="{% if page.date %}article{% else %}website{% endif %}">
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
-  <meta property="og:image" content="{% if page.image.feature %}{{ page.image.feature | prepend: site.baseurl_featured_img | prepend: site.url }}{% else %}{{ site.icon | prepend: site.baseurl | prepend: site.url }}{% endif %}">
+  <meta property="og:image" content="{% if page.image.feature %}{{ site.url }}{{ site.baseurl }}{{ site.baseurl_featured_img }}{{ page.image.feature }}{% else %}{{ site.icon | prepend: site.baseurl | prepend: site.url }}{% endif %}">
   <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <meta property="og:site_name" content="{{ site.name }}">
   <meta property="og:locale" content="{{ site.locale }}">
@@ -75,11 +75,11 @@
   </title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="{{ site.baseurl }}assets/css/main.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
 
   {% if page.syntaxHighlighter %}
-    <link rel="stylesheet" href="{{ site.baseurl }}assets/css/prism-okaidia.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}assets/css/prism-line-numbers.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/prism-okaidia.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/prism-line-numbers.css">
   {% endif %}
 
   <!-- Fonts -->
@@ -88,8 +88,8 @@
   <link href='http://fonts.googleapis.com/css?family=PT+Sans:700' rel='stylesheet' type='text/css'>
 
   <!-- Icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}assets/apple-touch-icon-144-precomposed.png">
-  <link rel="shortcut icon" href="{{ site.baseurl }}assets/images/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/assets/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="{{ site.baseurl }}/assets/images/favicon.ico">
 
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
