@@ -25,7 +25,7 @@ Disney died from lung cancer on December 15, 1966, in Burbank, California. He le
 
 #### Childhood
 
-<div class="img img--fullContainer img--14xLeading" style="background-image: url({{ site.baseurl_posts_img }}walt-childhood.jpg);"></div>
+<div class="img img--fullContainer img--14xLeading" style="background-image: url({{ site.baseurl }}{{ site.baseurl_posts_img }}walt-childhood.jpg);"></div>
 
 Disney was born on December 5, 1901, at 2156 North Tripp Avenue in Chicago's Hermosa community area, to Elias Charles Disney, who was Irish-Canadian, and Flora Call Disney, who was of German and English descent. His great-grandfather, Arundel Elias Disney, had emigrated from Gowran, County Kilkenny, Ireland where he was born in 1801. Arundel Disney was a descendant of Robert d'Isigny, a Frenchman who had travelled to England with William the Conqueror in 1066. With the d'Isigny name anglicized as "Disney", the family settled in the English village now known as Norton Disney, south of the city of Lincoln, in the county of Lincolnshire.
 

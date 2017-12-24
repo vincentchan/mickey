@@ -1,11 +1,9 @@
 
 # Syntax highlighting
-markdown:            redcarpet
-highlighter:         pygments
+highlighter:         rouge
 
 # Permalinks
 permalink:           /:title
-relative_permalinks: true
 
 # Setup
 timezone:            your timezone # eg. Asia/Kathmandu
@@ -16,7 +14,7 @@ tagline:             'tagline'
 description:         'description'
 url:                 site url
 rss:                 rss feed url
-baseurl:             '/'
+baseurl:             ''
 baseurl_posts_img:   '/assets/images/posts/'
 baseurl_featured_img: '/assets/images/hero/'
 baseurl_featured_thumbnail: '/assets/images/thumbnail/'
