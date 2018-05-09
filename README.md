@@ -1,3 +1,6 @@
+> *Mickey theme compatible with Jekyll 3.x. with minimal fixes.* To install, do `bundle install` then `bundle exec jekyll serve`
+
+
 # Mickey
 
 Mickey is a minimal one-column, responsive theme for [Jekyll](http://jekyllrb.com).
