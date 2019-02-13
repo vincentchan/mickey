@@ -7,7 +7,7 @@ excerpt: "一封写给即将上大学的小朋友的信，同时也是对我大�
 categories: letter
 tags:  
 image:
-  feature: walt-disney.jpg
+  feature: hero-cover.jpg
   topPosition: 0px
 bgContrast: dark
 bgGradientOpacity: darker
@@ -27,7 +27,7 @@ syntaxHighlighter: no
 
 然而，这些其实并不是我真正想告诉你的。上大学最重要的并不在这里。
 
-<div class="img img--fullContainer img--14xLeading" style="background-image: url({{ site.baseurl_posts_img }}walt-childhood.jpg);"></div>
+<div class="img img--fullContainer img--14xLeading" style="background-image: url({{ site.baseurl_posts_img }}birds-flying-from-cage-tattoos-design.jpg);"></div>
 
 
 高考，是人生第一次对于自由的想象。在你的心愿以及你的分数能够触及的众多目标学校和、众多专业之间根据你自己有限的了解、认知以及一点点搜集信息的能力，在短时间内做出选择。这大概是现实第一次在你面前如此生动的呈现。从今往后，人生的每一步都是在做选择。每一次的选择在根本上取决于你对于这个世界和自我的认知，直接上决定于你对每一个选择评估的能力和你拥有的选项，临门一脚的时候，取决于你自己的心愿和梦想。
@@ -35,7 +35,7 @@ syntaxHighlighter: no
 
 而我觉得，大学是个非常难得的时光，可以让你最充分和最自由的支配自己的时间去做想做的事情。而最重要的是，提升自己对世界和自我的认知以及为自己储备在社会上的生存能力。
 
-<div class="img img--fullContainer img--14xLeading" style="background-image: url({{ site.baseurl_posts_img }}walt-childhood.jpg);"></div>
+<div class="img img--fullContainer img--14xLeading" style="background-image: url({{ site.baseurl_posts_img }}IMG_7894.jpg);"></div>
 
 提升认知的方法是交流。第一等的交流是和经典的交流，第二等是和大师交流，第三等是和比自己优秀的人交流。而从实用性上说正好翻过来。但是不能本末倒置。因为大部分经典的书可以给你呈现最广阔和客观的世界，但却没有具体的操作方法。大师可以给一定的视野的同时可以给你一些策略，但不直接。自己身边优秀的人大概只能告诉你最实用的方法。最根本的东西在本质上决定你的高度，最实用的东西决定你在某个层面的广度，这是一种矛盾。你在拓宽广度的同时，没有办法提升高度，反之亦然。只能根据不同的时间做平衡与抉择。希望你在大学里多读书，多交流，多找那些闪闪发光的灵魂，并和他们多待一会儿。这些灵魂大部分在经典的书里，当然少部分也在现实里。现实里的更亲切，书里的更震撼。最好两个都有。在大学的读书团里，与志同道合的人共享伟大灵魂的沐浴。大学里是最有时间读长篇的经典的。有这些为你打下底子，就可以多一份从容和底气。我自己比较后悔没有多读这些经典的长篇。
 
@@ -60,7 +60,7 @@ PS：
 2.	如果你想看一个伟大的灵魂是什么样的，推荐你看《约翰·克里斯朵夫》
 
 
-<div class="img img--fullContainer img--14xLeading" style="background-image: url({{ site.baseurl_posts_img }}walt-childhood.jpg);"></div>
+<div class="img img--fullContainer img--14xLeading" style="background-image: url({{ site.baseurl_posts_img }}hero-cover.jpg);"></div>
 
 
 
