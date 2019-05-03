@@ -9,7 +9,7 @@
     "url": "https://github.com/vincentchan"
   },
   "devDependencies": {
-    "browser-sync": "~2.9.7",
+    "browser-sync": "^2.26.5",
     "concurrent-transform": "^1.0.0",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "~3.0.2",
@@ -18,5 +18,9 @@
     "gulp-postcss": "~6.0.0",
     "gulp-rename": "~1.2.2",
     "gulp-sass": "^2.0.4"
+  },
+  "dependencies": {
+    "cross-spawn": "^6.0.5",
+    "gm": "^1.23.1"
   }
 }
