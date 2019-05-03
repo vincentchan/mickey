@@ -9,7 +9,7 @@ var gulp = require('gulp'),
     parallel = require("concurrent-transform"),
     os = require("os"),
     cp = require('child_process');
-
+const spawn = require('cross-spawn');
 var messages = {
   jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
 };

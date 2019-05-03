@@ -5,6 +5,7 @@ highlighter:         rouge
 
 # Permalinks
 permalink:           /:title
+relative_permalinks: false
 
 
 # Setup
