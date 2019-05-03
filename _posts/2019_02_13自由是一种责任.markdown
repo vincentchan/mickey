@@ -8,7 +8,7 @@ categories: letter
 tags:  
 image:
   feature: hero-cover.jpg
-  topPosition: 0px
+  topPosition: -50px
 bgContrast: dark
 bgGradientOpacity: darker
 syntaxHighlighter: no
