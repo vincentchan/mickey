@@ -1,14 +1,18 @@
 
 # Syntax highlighting
-markdown:            redcarpet
-highlighter:         pygments
+markdown:            kramdown
+highlighter:         rouge
 
 # Permalinks
 permalink:           /:title
 relative_permalinks: false
+<<<<<<< HEAD
+=======
+
+>>>>>>> 54ea9b6dd278eaeb22bdd0fd872295988578d727
 
 # Setup
-timezone:            your timezone # eg. Asia/Kathmandu
+timezone:            CET # eg. Asia/Kathmandu
 locale:              your locale language # eg. en_us
 name:				         site name
 title:               site title
