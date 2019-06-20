@@ -1,6 +1,21 @@
-test01
-==
-hellworodl
---
+---
+layout: post
+title:  "Jetson Nano를 이용한 물체인식 코드 돌려보기"
+date:   2019-06-20 23:15:00
+last_modified_at:  2019-06-20 23:15:00
+excerpt: "Walter Elias Disney was an American entrepreneur, cartoonist, animator, voice actor, and film producer. As a prominent..."
+categories: lab
+tags:  Jetson Nano
+image:
+  feature: walt-disney.jpg
+  topPosition: 0px
+bgContrast: dark
+bgGradientOpacity: darker
+syntaxHighlighter: no
+---
 
-**hewlgkjewlg**
+
+Jetson Nano를 이용한 물체인식 코드 돌려보기
+==
+1.Set up
+--
