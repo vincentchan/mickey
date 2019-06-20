@@ -7,7 +7,7 @@ excerpt: "Walter Elias Disney was an American entrepreneur, cartoonist, animator
 categories: lab
 tags:  Jetson Nano
 image:
-  feature: walt-disney.jpg
+  feature: mcikey-OpryHouse.jpg
   topPosition: 0px
 bgContrast: dark
 bgGradientOpacity: darker
@@ -15,7 +15,14 @@ syntaxHighlighter: no
 ---
 
 
-Jetson Nano를 이용한 물체인식 코드 돌려보기
-==
-1.Set up
+Set up
 --
+
+#### 구조
+
+<div class="img img--fullContainer img--14xLeading" style="background-image: url({{ site.baseurl_posts_img }}jetson-nano-dev-kit-top-r6-HR.png);"></div>
+
+구조부터 한번 찬찬히 살펴보자.
+
+
+참고한 동영상 : [친절한 언박싱](https://www.youtube.com/watch?v=km0yT99eVTY)
