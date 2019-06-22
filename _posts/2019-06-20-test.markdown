@@ -22,6 +22,8 @@ Set up
 
 <div class="img img--fullContainer img--14xLeading" style="background-image: url({{ site.baseurl_posts_img }}jetson-nano-dev-kit-top-r6-HR.png);"></div>
 
+사진 출처 - [출처](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#intro)
+
 구조부터 한번 찬찬히 살펴보자.
 
 주로 사용했던 부분위주로 설명하겠다.
@@ -37,6 +39,39 @@ Set up
 8번은 jetson nano 충전기를 연결
 
 9번은 라즈베리파이 카메라를 연결하는 포트이다.
+
+구조에 대한 설명이 끝났다. 이제 본격적인 setting에 들어가보자
+
+Setting
+--
+
+일단 운영체제를 먼저 설치해야 한다.
+
+ubuntu를 사용해서 Jetson Nano를 실행해보자.
+
+일단 SD카드를 포맷부터 해야한다.
+
+다운로드는 하단 링크 참조.
+
+[윈도우](https://www.sdcard.org/downloads/formatter/eula_windows/)
+
+[MAC, LINUX](https://www.balena.io/etcher/)
+
+그 다음 공식홈페이지에서 Jetson Nano에 쓰일 SD Card에 image 파일을 받아와야 한다.
+
+직접 nvidia 공식홈페이지에서 다운로드를 받아도 되고 하단의 링크에서 다운로드 받아도 된다.
+
+용량이 꽤나 큰 편이니 주의하자.
+
+[Jetson Nano Developer Kit SD Card Image](https://developer.nvidia.com/embedded/dlc/jetson-nano-dev-kit-sd-card-image)
+
+다운로드가 완료 되었다면 SD카드에 파일을 넣고 Jetson의 2번 포트에 넣어주자
+
+Jetson을 다루기 위해 모니터, 마우스, 무선랜포트 or 랜선, 전원을 연결하고 실행시킨다.
+
+실행시키면 ubuntu 설치가 이루어 질 것이다.
+
+운영체제 설치가 완료되면 이제 Jetson을 동작시켜보자 !
 
 
 참고한 동영상 : [친절한 언박싱](https://www.youtube.com/watch?v=km0yT99eVTY)
