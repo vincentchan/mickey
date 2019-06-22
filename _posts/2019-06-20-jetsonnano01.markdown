@@ -83,6 +83,7 @@ Jetson Nano 동작
 자 이제 Jetson에 라즈베리파이 카메라를 연결해주고 카메라를 이용한 물체인식 코드를 돌려 볼 차례이다.
 
 터미널을 켜서
+<blockquote class="u--startsWithDoubleQuote">sudo apt-get install git cmake</blockquote>
 <pre><code>sudo apt-get install git cmake</code></pre>
 를 실행한다.
 
@@ -140,3 +141,5 @@ imagenet-camera를 실행하였다면, 라즈베리파이 카메라로 잡히는
 ....
 
 자신을 그저 테이프 플레이어 정도로 밖에 생각하지 못하는 아쉬운 리더였다.
+
+참고한 동영상 : [Jetson Nano :Vision Recognition Neural Network Demo](https://www.youtube.com/watch?v=k5pXXmTkPNM)
