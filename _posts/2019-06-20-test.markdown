@@ -18,8 +18,9 @@ syntaxHighlighter: no
 Set up
 --
 
-#### 구조
 
+#### 구조
+***
 <div class="img img--fullContainer img--14xLeading" style="background-image: url({{ site.baseurl_posts_img }}jetson-nano-dev-kit-top-r6-HR.png);"></div>
 
 사진 출처 - https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#intro
@@ -43,7 +44,7 @@ Set up
 구조에 대한 설명이 끝났다. 이제 본격적인 setting에 들어가보자
 
 #### Setting
-
+***
 일단 운영체제를 먼저 설치해야 한다.
 
 ubuntu를 사용해서 Jetson Nano를 실행해보자.
@@ -52,7 +53,7 @@ ubuntu를 사용해서 Jetson Nano를 실행해보자.
 
 다운로드는 하단 링크 참조.
 
-{{{#green [윈도우](https://www.sdcard.org/downloads/formatter/eula_windows/)}}}
+[윈도우](https://www.sdcard.org/downloads/formatter/eula_windows/)
 
 [MAC, LINUX](https://www.balena.io/etcher/)
 
@@ -77,3 +78,63 @@ Jetson을 다루기 위해 모니터, 마우스, 무선랜포트 or 랜선, 전�
 
 Jetson Nano 동작
 --
+***
+
+자 이제 Jetson에 라즈베리파이 카메라를 연결해주고 카메라를 이용한 물체인식 코드를 돌려 볼 차례이다.
+
+터미널을 켜서
+<pre><code>sudo apt-get install git cmake</code></pre>
+를 실행한다.
+
+깃허브에 있는 소스를 clone 해온다.
+<pre><code>git clone https://github.com/dusty-nv/jetson-inference</code></pre>
+
+clone이 완료가 되었다면 clone한 폴더로 이동하자
+<pre><code>cd jetson-inference</code></pre>
+
+그 다음 submodule update를 해준다.
+<pre><code>git submodule update --init</code></pre>
+
+build 라는 폴더를 하나 만들어주고, build로 이동
+<pre><code>mkdir build
+cd build</code></pre>
+
+build 에서,
+<pre><code>cmake ../
+make
+sudo make install</code></pre>를 입력하여 설치해주자
+
+이제 실행할 준비가 되었다!
+
+터미널에서
+<pre><code>cd /jetson-inference/build/aarch64/bin</code></pre>로 이동해주고
+
+imagenet-camera googlenet 실행
+<pre><code>./imagenet-camera googlenet</code></pre>
+
+실행하고 나서 심한 렉이 걸리거나, 화면이 멈춘다면 jetson의 전원을 한번 뽑아서 재부팅 해주면 된다.
+
+imagenet-camera를 실행하였다면, 라즈베리파이 카메라로 잡히는 물체를 jetson이 어떤 사물인지 판단하여 알려준다.
+
+필자는 jetson에게 가발판정을 받았다..T-T...
+여러분은 그렇지 않길..
+
+그럼 jetson이 인식한 내용을 보자
+
+<div class="img img--fullContainer img--14xLeading" style="background-image: url({{ site.baseurl_posts_img }}JetsonNanoBananaCheck.png);"></div>
+-바나나 모양 필통을 바나나로 인식했다. 가격이 의심되지만 이정도면 애교라고 생각한다.
+
+<div class="img img--fullContainer img--14xLeading" style="background-image: url({{ site.baseurl_posts_img }}JetsonNanoLighterCheck.png);"></div>
+-라이터를 잘 집어냈다. 역시 비싼 기계는 다르다.
+
+<div class="img img--fullContainer img--14xLeading" style="background-image: url({{ site.baseurl_posts_img }}JetsonNanoMonitorCheck.png);"></div>
+-모니터도 잘 간파했다.
+
+이렇게 사물을 잘 판단하는 Jetson. 4차산업혁명의 리더라고 봐도 무방하겠다.
+
+그렇다면 과연 자기 자신은 잘 판단할까?
+
+<div class="img img--fullContainer img--14xLeading" style="background-image: url({{ site.baseurl_posts_img }}JetsonNanoSelfCheck.png);"></div>
+..
+....
+자신을 그저 테이프 플레이어 정도로 밖에 생각하지 못하는 아쉬운 리더였다.
