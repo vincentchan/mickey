@@ -1,6 +1,6 @@
 
 # Syntax highlighting
-markdown:            redcarpet
+markdown:            kramdown
 highlighter:         pygments
 
 # Permalinks
