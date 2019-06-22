@@ -143,3 +143,41 @@ imagenet-camera를 실행하였다면, 라즈베리파이 카메라로 잡히는
 자신을 그저 테이프 플레이어 정도로 밖에 생각하지 못하는 아쉬운 리더였다.
 
 참고한 동영상 : [Jetson Nano :Vision Recognition Neural Network Demo](https://www.youtube.com/watch?v=k5pXXmTkPNM)
+
+#### ++bonus
+***
+기왕 Jetson에 라즈베리파이 카메라를 연결한 김에 얼굴 인식도 같이 해보자.
+
+github에 존재하는 CSI-camera를 이용할 것이다.
+
+터미널을 열고 일단 clone 해오자.
+<blockquote class="u--startsWithDoubleQuote">git clone https://github.com/JetsonHacksNano/CSI-camera</blockquote>
+
+clone을 다 해왔으면 clone한 폴더로 이동
+<blockquote class="u--startsWithDoubleQuote">cd CSI-camera</blockquote>
+
+그렇다면 이제 카메라가 잘 동작 하는지 테스트를 해보자.
+<blockquote class="u--startsWithDoubleQuote">gst-launch-1.0 nvarguscamerasrc ! 'video/x-raw(memory:NVMM),width=3820, height=2464, framerate=21/1, format=NV12' ! nvvidconv flip-method=0 ! 'video/x-raw,width=960, height=616' ! nvvidconv ! nvegltransform ! nveglglessink -e</blockquote>
+
+위 명령어를 입력하면 카메라가 비추는 방향을 모니터에서 확인이 가능하다.
+
+혹시나 이 카메라로 인터넷 방송을 시작하겠다면 말리진 않겠다.  
+아마 금방 카메라를 내리치거나 방송을 그만 둘 지도 모른다.
+
+그럼 이제 얼굴 인식을 해보자.
+
+얼굴 인식을 하는 module은 python으로 만들어졌다. python이 안쓰이는 곳은 과연 어디일까 궁금할 정도다.
+
+한번 실행해보자.
+<blockquote class="u--startsWithDoubleQuote">python face_detect.py</blockquote>
+
+실행을 하게 되면 초록색 네모는 사람의 이목구비를, 파란색 네모는 사람의 전체적인 얼굴형을 잡는 듯 하다.
+
+<div class="img img--fullContainer img--14xLeading" style="background-image: url({{ site.baseurl_posts_img }}JetsonNanoHumanCheck.png);"></div>
+구글에서 가져온 이미지로 한번 실행해보았다. 아주 실행이 잘 되는 듯 하다.
+
+그렇다면 이번에는 Jetson이 가발 판정을 내리지 않을 것이라고 판단하고 작성자의 얼굴을 찍어보았으나 미동도 없다.
+
+내일부터 Jetson의 집은 분리수거장이다.
+
+참고한 동영상 : [Jetson Nano + Rasberry Pi Camera](https://www.youtube.com/watch?v=dHvb225Pw1s)
