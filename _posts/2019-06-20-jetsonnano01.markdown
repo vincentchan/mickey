@@ -7,7 +7,7 @@ excerpt: "구조부터 한번 찬찬히 살펴보자. 주로 사용했던 부분
 categories: lab
 tags:  Jetson Nano
 image:
-  feature: mcikey-OpryHouse.jpg
+  feature: mickey-OpryHouse.jpg
   topPosition: 0px
 bgContrast: dark
 bgGradientOpacity: darker
