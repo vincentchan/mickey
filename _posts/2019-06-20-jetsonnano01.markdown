@@ -86,34 +86,32 @@ Jetson Nano 동작
 <blockquote class="u--startsWithDoubleQuote">sudo apt-get install git cmake</blockquote>
 를 실행한다.
 
-<blockquote class="largeQuote">git clone https://github.com/dusty-nv/jetson-inference</blockquote>
-
 깃허브에 있는 소스를 clone 해온다.
+<blockquote class="u--startsWithDoubleQuote">git clone https://github.com/dusty-nv/jetson-inference</blockquote>
 
-<pre><code>git clone https://github.com/dusty-nv/jetson-inference</code></pre>
 
 clone이 완료가 되었다면 clone한 폴더로 이동하자
-<pre><code>cd jetson-inference</code></pre>
+<blockquote class="u--startsWithDoubleQuote">cd jetson-inference</blockquote>
 
 그 다음 submodule update를 해준다.
-<pre><code>git submodule update --init</code></pre>
+<blockquote class="u--startsWithDoubleQuote">git submodule update --init</blockquote>
 
 build 라는 폴더를 하나 만들어주고, build로 이동
-<pre><code>mkdir build
-cd build</code></pre>
+<blockquote class="u--startsWithDoubleQuote">mkdir build  
+cd build</blockquote>
 
 build 에서,
-<pre><code>cmake ../
-make
-sudo make install</code></pre>를 입력하여 설치해주자
+<blockquote class="u--startsWithDoubleQuote">cmake ../  
+make  
+sudo make install</blockquote> 를 입력하여 설치해주자
 
 이제 실행할 준비가 되었다!
 
 터미널에서
-<pre><code>cd /jetson-inference/build/aarch64/bin</code></pre>로 이동해주고
+<blockquote class="u--startsWithDoubleQuote">cd /jetson-inference/build/aarch64/bin</blockquote> 로 이동해주고
 
 imagenet-camera googlenet 실행
-<pre><code>./imagenet-camera googlenet</code></pre>
+<blockquote class="u--startsWithDoubleQuote">./imagenet-camera googlenet</blockquote>
 
 실행하고 나서 심한 렉이 걸리거나, 화면이 멈춘다면 jetson의 전원을 한번 뽑아서 재부팅 해주면 된다.
 
@@ -138,9 +136,9 @@ imagenet-camera를 실행하였다면, 라즈베리파이 카메라로 잡히는
 그렇다면 과연 자기 자신은 잘 판단할까?
 
 <div class="img img--fullContainer img--14xLeading" style="background-image: url({{ site.baseurl_posts_img }}JetsonNanoSelfCheck.png);"></div>
-..
+..  
 
-....
+....  
 
 자신을 그저 테이프 플레이어 정도로 밖에 생각하지 못하는 아쉬운 리더였다.
 
