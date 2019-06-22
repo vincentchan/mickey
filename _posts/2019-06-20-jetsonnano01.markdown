@@ -84,10 +84,12 @@ Jetson Nano 동작
 
 터미널을 켜서
 <blockquote class="u--startsWithDoubleQuote">sudo apt-get install git cmake</blockquote>
-<pre><code>sudo apt-get install git cmake</code></pre>
 를 실행한다.
 
+<blockquote class="largeQuote">git clone https://github.com/dusty-nv/jetson-inference</blockquote>
+
 깃허브에 있는 소스를 clone 해온다.
+
 <pre><code>git clone https://github.com/dusty-nv/jetson-inference</code></pre>
 
 clone이 완료가 되었다면 clone한 폴더로 이동하자
