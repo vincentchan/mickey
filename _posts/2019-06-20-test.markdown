@@ -136,5 +136,7 @@ imagenet-camera를 실행하였다면, 라즈베리파이 카메라로 잡히는
 
 <div class="img img--fullContainer img--14xLeading" style="background-image: url({{ site.baseurl_posts_img }}JetsonNanoSelfCheck.png);"></div>
 ..
+
 ....
+
 자신을 그저 테이프 플레이어 정도로 밖에 생각하지 못하는 아쉬운 리더였다.
