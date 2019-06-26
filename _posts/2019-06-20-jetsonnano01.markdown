@@ -101,8 +101,8 @@ build 라는 폴더를 하나 만들어주고, build로 이동
 cd build</blockquote>
 
 build 에서,
-<blockquote class="u--startsWithDoubleQuote">cmake ../  
-make  
+<blockquote class="u--startsWithDoubleQuote">cmake ../<br>  
+make<br>  
 sudo make install</blockquote> 를 입력하여 설치해주자
 
 이제 실행할 준비가 되었다!

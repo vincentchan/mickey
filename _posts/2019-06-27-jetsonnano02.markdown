@@ -1,0 +1,102 @@
+---
+layout: post
+title:  "Jetson Nano benchmark"
+date:   2019-06-27 02:11:00
+last_modified_at:  2019-06-27 02:11:00
+excerpt: ""
+categories: lab
+tags:  Jetson Nano
+image:
+  feature: mickey-stupid.jpg
+  topPosition: 0px
+bgContrast: dark
+bgGradientOpacity: darker
+syntaxHighlighter: no
+---
+
+[임시]Jetson Nano benchmark
+==
+
+이번엔 Jetson Nano를 이용하여 benchmark를 진행하고자 한다.
+
+이번에 무슨 사업을 벤치마크 하러 어디를 간다더라 이런 이야기를 다들 많이 들어 봤을 것이다.
+
+우리는 저 대화에 자연스럽게 낄 지혜가 필요하다.
+
+benchmark가 무슨 뜻인지부터 한번 살펴보자.
+
+<div class="img img--fullContainer img--14xLeading" style="background-image: url({{ site.baseurl_posts_img }}meaning_of_benchmark01.png);"></div>
+
+출처 - 네이버 사전
+
+그렇다. "기준" 이라는 뜻이었다.  
+
+(칵테일을 먼저 떠올렷다면 무슨 맛인지 후기를 남겨주길 바란다.)
+
+기준 이라는 말은 뭔가 우리가 생각했던 뜻과 좀 동떨어져 있다.
+
+이번엔 구선생님에게 물어보자.
+
+구선생님께서 말씀하시길,
+
+### 경영적인 측면 :
+경쟁 업체의 경양방식을 면밀히 분석하여 자사의 경영과 생산에 응용하고 따라잡는 경영 전략.
+
+### 컴퓨팅적 측면 :
+컴퓨터의 부품 등의 성능을 프로그램을 이용하여 비교, 평가하여 점수를 내는 결과
+
+라고 한다. 역시 구선생님이다.
+
+그렇다면 경영적인 측면은 교양있는 대화에서 써 먹고, 우리는 __컴퓨팅적 측면__에서 Jetson Nano를 씹고 뜯고 맛보고 즐겨보자.
+
+
+
+
+
+
+***
+
+# Benchmark
+
+<div class="img img--fullContainer img--14xLeading" style="background-image: url({{ site.baseurl_posts_img }}jetson_nano-deep_learning_inference_perf-chart.png);"></div>
+
+출처 - [nvidia developer](https://developer.nvidia.com/embedded/jetson-nano-dl-inference-benchmarks)  
+
+
+사실 Jetson Nano의 Benchmark는 Jetson의 판매사인 nvidia에서 친절하게 작성하여 그래프로 그려주었다.
+
+그렇다면 왜 하려는것인가?
+
+그렇다. 의심병이다.
+
+nvidia측의 상술에 넘어가면 안된다. 일단 의심부터 하고본다.
+
+그럼 바로 benchmark를 시작해보자.
+
+의심이 간다고는 했지만, benchmark 방식은 nvidia측에서 제공한 지시를 따라서 할 것이다.
+
+자세한 설명을 원한다면 [링크](https://developer.nvidia.com/embedded/jetson-nano-dl-inference-benchmarks)를 참고하면 되겠다.
+
+영어와 친하지 않아서 직접 설명을 못해주기 때문에 그런것은 절대 아니다.
+
+전부 benchmark를 해보진 않을 것이고 몇개만 추려서 제시한 자료와 맞는지만 확인해보자.
+
+(benchmark는 TensorRT와 함께하고, __fp는 16__으로, __batch는 1__을 기준으로 한다.
+)
+
+betchmark를 하기 전에, nvidia측에서 권장하는 power supply를 맞추기 위해서
+Jetson을 10W perfomance mode로 해주어야 한다.
+
+Jetson의 power mode 에는 0과 1이 있는데, 0은 10W 1은 5W이다.
+
+5W 모드로 실행을 할 경우 benchmark를 하는 도중에 종료되거나, 시스템이 불안정해 질 수 있다고 하니 주의하자.
+
+<blockquote class="u--startsWithDoubleQuote">sudo nvpmodel -m 0<br>
+sudo jetson_clocks</blockquote>
+
+SSD-Mobilenet-V2에 대한 정보 - https://medium.com/@sunwoopark/slow-paper-mobilenetv2-inverted-residuals-and-linear-bottlenecks-6eacaa696b54
+
+측정해서 나온 사진 -
+<div class="img img--fullContainer img--14xLeading" style="background-image: url({{ site.baseurl_posts_img }}SSD-Mobilenet-V2.png);"></div>
+
+ResNet 50
