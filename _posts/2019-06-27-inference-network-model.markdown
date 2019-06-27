@@ -30,7 +30,7 @@ deep learning은 기본적으로 network의 깊이가 깊어질수록 성능이 
 
 그런 생각을 가지고 실험을 하였다. 과연 network와 성능이 무조건적인 비례관계를 가지는 것인가 ...  
 
-<div class="img img--fullContainer img--12xLeading" style="background-image: url({{ site.baseurl_posts_img }}degradation_problem.png);"></div>
+<div class="img img--fullContainer img--14xLeading" style="background-image: url({{ site.baseurl_posts_img }}degradation_problem.png);"></div>
 출처 - https://hichoe95.tistory.com/35
 
 특정 부분까지는 network가 깊으면 깊을수록 성능이 좋아지는 것이 사실이나, 특정 부분을 벗어나게 되면 오히려 성능이 더 떨어지는 현상이 발생하였다.
@@ -48,7 +48,7 @@ network의 깊이가 깊어질수록, 정확도가 포화(더이상 받아들일
 
 이 현상을 해결하기 위해서 *Identity mapping* 과 *Residual learning* 을 사용하였다.
 
-<div class="img img--fullContainer img--12xLeading" style="background-image: url({{ site.baseurl_posts_img }}residual_learning.PNG);"></div>
+<div class="img img--fullContainer img--14xLeading" style="background-image: url({{ site.baseurl_posts_img }}residual_learning.PNG);"></div>
 
 (relu = 음수의 값을 0으로 매핑, 활성화(activate))
 
