@@ -25,7 +25,7 @@ syntaxHighlighter: no
 
 benchmark가 무슨 뜻인지부터 한번 살펴보자.
 
-<div class="img img--fullContainer img--10xLeading" style="background-image: url({{ site.baseurl_posts_img }}meaning_of_benchmark01.png);"></div>
+<div class="img img--fullContainer img--8xLeading" style="background-image: url({{ site.baseurl_posts_img }}meaning_of_benchmark01.png);"></div>
 
 출처 - 네이버 사전
 
