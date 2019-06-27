@@ -47,7 +47,7 @@ benchmark가 무슨 뜻인지부터 한번 살펴보자.
 
 라고 한다. 역시 구선생님이다.
 
-그렇다면 경영적인 측면은 교양있는 대화에서 써 먹고, 우리는 __컴퓨팅적 측면__에서 Jetson Nano를 씹고 뜯고 맛보고 즐겨보자.
+그렇다면 경영적인 측면은 교양있는 대화에서 써 먹고, 우리는 **컴퓨팅적 측면**에서 Jetson Nano를 씹고 뜯고 맛보고 즐겨보자.
 
 
 
@@ -81,7 +81,7 @@ nvidia측의 상술에 넘어가면 안된다. 일단 의심부터 하고본다.
 
 전부 benchmark를 해보진 않을 것이고 몇개만 추려서 제시한 자료와 맞는지만 확인해보자.
 
-(benchmark는 TensorRT와 함께하고, __fp는 16__으로, __batch는 1__을 기준으로 한다.
+(benchmark는 TensorRT와 함께하고, **fp는 16**으로, **batch는 1**을 기준으로 한다.
 )
 
 betchmark를 하기 전에, nvidia측에서 권장하는 power supply를 맞추기 위해서
@@ -94,9 +94,26 @@ Jetson의 power mode 에는 0과 1이 있는데, 0은 10W 1은 5W이다.
 <blockquote class="u--startsWithDoubleQuote">sudo nvpmodel -m 0<br>
 sudo jetson_clocks</blockquote>
 
-SSD-Mobilenet-V2에 대한 정보 - https://medium.com/@sunwoopark/slow-paper-mobilenetv2-inverted-residuals-and-linear-bottlenecks-6eacaa696b54
+자 그럼 benchmark의 결과를 비교해보자.
 
-측정해서 나온 사진 -
-<div class="img img--fullContainer img--14xLeading" style="background-image: url({{ site.baseurl_posts_img }}SSD-Mobilenet-V2.png);"></div>
+평균값은 소숫점 4째자리까지 표현하였고, 반올림을 하여 나타낸다.
 
-ResNet 50
+*SSD-mobilenet-V2
+<div class="img img--fullContainer img--8xLeading" style="background-image: url({{ site.baseurl_posts_img }}SSD-Mobilenet-V2.png);"></div>
+평균값 : 26.2355ms  
+   
+*ResNet 50
+<div class="img img--fullContainer img--8xLeading" style="background-image: url({{ site.baseurl_posts_img }}SSD-Mobilenet-V2.png);"></div>
+평균값 : 27.8128ms
+
+*Inception V4
+<div class="img img--fullContainer img--8xLeading" style="background-image: url({{ site.baseurl_posts_img }}Inception V4.png);"></div>
+평균값 : 95.9434ms
+
+*Pose Estimation
+<div class="img img--fullContainer img--8xLeading" style="background-image: url({{ site.baseurl_posts_img }}Pose Estimation.png);"></div>
+평균값 : 87.3721ms
+
+*Super Resolution
+<div class="img img--fullContainer img--8xLeading" style="background-image: url({{ site.baseurl_posts_img }}Super Resolution.png);"></div>
+평균값 : 67.5191ms
