@@ -101,19 +101,19 @@ sudo jetson_clocks</blockquote>
 *SSD-mobilenet-V2
 <div class="img img--fullContainer img--8xLeading" style="background-image: url({{ site.baseurl_posts_img }}SSD-Mobilenet-V2.png);"></div>
 평균값 : 26.2355ms  
-   
+
 *ResNet 50
 <div class="img img--fullContainer img--8xLeading" style="background-image: url({{ site.baseurl_posts_img }}SSD-Mobilenet-V2.png);"></div>
 평균값 : 27.8128ms
 
 *Inception V4
-<div class="img img--fullContainer img--8xLeading" style="background-image: url({{ site.baseurl_posts_img }}Inception V4.png);"></div>
+<div class="img img--fullContainer img--8xLeading" style="background-image: url({{ site.baseurl_posts_img }}Inception_V4.png);"></div>
 평균값 : 95.9434ms
 
 *Pose Estimation
-<div class="img img--fullContainer img--8xLeading" style="background-image: url({{ site.baseurl_posts_img }}Pose Estimation.png);"></div>
+<div class="img img--fullContainer img--8xLeading" style="background-image: url({{ site.baseurl_posts_img }}Pose_Estimation.png);"></div>
 평균값 : 87.3721ms
 
 *Super Resolution
-<div class="img img--fullContainer img--8xLeading" style="background-image: url({{ site.baseurl_posts_img }}Super Resolution.png);"></div>
+<div class="img img--fullContainer img--8xLeading" style="background-image: url({{ site.baseurl_posts_img }}Super_Resolution.png);"></div>
 평균값 : 67.5191ms
