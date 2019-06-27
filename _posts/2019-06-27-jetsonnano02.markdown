@@ -3,7 +3,7 @@ layout: post
 title:  "Jetson Nano benchmark"
 date:   2019-06-27 02:11:00
 last_modified_at:  2019-06-27 02:11:00
-excerpt: ""
+excerpt: "이번엔 Jetson Nano를 이용하여 benchmark를 진행하고자 한다. 이번에 무슨 사업을 벤치마크 하러 어디를 간다더라 이런 이야기를 다들 많이 들어 봤을 것이다."
 categories: lab
 tags:  Jetson Nano
 image:
@@ -99,21 +99,21 @@ sudo jetson_clocks</blockquote>
 평균값은 소숫점 4째자리까지 표현하였고, 반올림을 하여 나타낸다.
 
 *SSD-mobilenet-V2
-<div class="img img--fullContainer img--fullContainer" style="background-image: url({{ site.baseurl_posts_img }}SSD-Mobilenet-V2.png);"></div>
+<div class="img img--fullContainer img--5xLeading" style="background-image: url({{ site.baseurl_posts_img }}SSD-Mobilenet-V2.png);"></div>
 평균값 : 26.2355ms  
 
 *ResNet 50
-<div class="img img--fullContainer img--fullContainer" style="background-image: url({{ site.baseurl_posts_img }}ResNet-50.png);"></div>
+<div class="img img--fullContainer img--5xLeading" style="background-image: url({{ site.baseurl_posts_img }}ResNet-50.png);"></div>
 평균값 : 27.8128ms
 
 *Inception V4
-<div class="img img--fullContainer img--fullContainer" style="background-image: url({{ site.baseurl_posts_img }}Inception_V4.png);"></div>
+<div class="img img--fullContainer img--5xLeading" style="background-image: url({{ site.baseurl_posts_img }}Inception_V4.png);"></div>
 평균값 : 95.9434ms
 
 *Pose Estimation
-<div class="img img--fullContainer img--fullContainer" style="background-image: url({{ site.baseurl_posts_img }}Pose_Estimation.png);"></div>
+<div class="img img--fullContainer img--5xLeading" style="background-image: url({{ site.baseurl_posts_img }}Pose_Estimation.png);"></div>
 평균값 : 87.3721ms
 
 *Super Resolution
-<div class="img img--fullContainer img--fullContainer" style="background-image: url({{ site.baseurl_posts_img }}Super_Resolution.png);"></div>
+<div class="img img--fullContainer img--5xLeading" style="background-image: url({{ site.baseurl_posts_img }}Super_Resolution.png);"></div>
 평균값 : 67.5191ms

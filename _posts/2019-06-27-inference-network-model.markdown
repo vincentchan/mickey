@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "Jetson nano benchmark에 사용된 Inference Network model"
-date:   2019-06-27 02:11:00
-last_modified_at:  2019-06-27 02:11:00
-excerpt: ""
+date:   2019-06-28 02:09:00
+last_modified_at:  2019-06-28 02:09:00
+excerpt: "저번 Jetson Nano Benchmark에서 지나간 내용인 Network model에 대해서 간단히 알아보자. 저번에 Benchmark를 했던 모델들만 진행한다."
 categories: lab
 tags:  Network model
 image:
@@ -48,7 +48,7 @@ network의 깊이가 깊어질수록, 정확도가 포화(더이상 받아들일
 
 이 현상을 해결하기 위해서 *Identity mapping* 과 *Residual learning* 을 사용하였다.
 
-<div class="img img--fullContainer img--14xLeading" style="background-image: url({{ site.baseurl_posts_img }}residual_learning.png);"></div>
+<div class="img img--fullContainer img--5xLeading" style="background-image: url({{ site.baseurl_posts_img }}residual_learning.png);"></div>
 
 (relu = 음수의 값을 0으로 매핑, 활성화(activate))
 
