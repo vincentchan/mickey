@@ -58,7 +58,7 @@ benchmark가 무슨 뜻인지부터 한번 살펴보자.
 
 # Benchmark
 
-<div class="img img--fullContainer img--5xLeading" style="background-image: url({{ site.baseurl_posts_img }}jetson_nano-deep_learning_inference_perf-chart.png);"></div>
+<div class="img img--fullContainer img--10xLeading" style="background-image: url({{ site.baseurl_posts_img }}jetson_nano-deep_learning_inference_perf-chart.png);"></div>
 
 출처 - [nvidia developer](https://developer.nvidia.com/embedded/jetson-nano-dl-inference-benchmarks)  
 
