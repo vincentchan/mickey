@@ -48,7 +48,7 @@ network의 깊이가 깊어질수록, 정확도가 포화(더이상 받아들일
 
 이 현상을 해결하기 위해서 *Identity mapping* 과 *Residual learning* 을 사용하였다.
 
-<div class="img img--fullContainer img--8xLeading" style="background-image: url({{ site.baseurl_posts_img }}residual_learning.png);"></div>
+<div class="img img--fullContainer img--14xLeading" style="background-image: url({{ site.baseurl_posts_img }}residual_learning.png);"></div>
 
 (relu = 음수의 값을 0으로 매핑, 활성화(activate))
 
