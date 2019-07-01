@@ -14,7 +14,7 @@ bgGradientOpacity: darker
 syntaxHighlighter: no
 ---
 
-[임시]Jetson Nano benchmark
+Jetson Nano benchmark
 --
 
 이번엔 Jetson Nano를 이용하여 benchmark를 진행하고자 한다.
@@ -81,7 +81,7 @@ nvidia측의 상술에 넘어가면 안된다. 일단 의심부터 하고본다.
 
 전부 benchmark를 해보진 않을 것이고 몇개만 추려서 제시한 자료와 맞는지만 확인해보자.
 
-(benchmark는 TensorRT와 함께하고, **fp는 16**으로, **batch는 1**을 기준으로 한다.
+(benchmark는 TensorRT와 함께하고, **fp는 16**(반정밀)으로, **batch는 1**을 기준으로 한다.
 )
 
 betchmark를 하기 전에, nvidia측에서 권장하는 power supply를 맞추기 위해서
@@ -96,24 +96,43 @@ sudo jetson_clocks</blockquote>
 
 자 그럼 benchmark의 결과를 비교해보자.
 
+각 benchmark에 이용된 model들은 다른 포스팅에서 설명 할 예정이다.
+
 평균값은 소숫점 4째자리까지 표현하였고, 반올림을 하여 나타낸다.
 
-*SSD-mobilenet-V2
-<div class="img img--fullContainer img--5xLeading" style="background-image: url({{ site.baseurl_posts_img }}SSD-Mobilenet-V2.png);"></div>
-평균값 : 26.2355ms  
+* SSD-mobilenet-V2 (300 x 300)
+<div class="img img--fullContainer img--7xLeading" style="background-image: url({{ site.baseurl_posts_img }}SSD-Mobilenet-V2.png);"></div>
+평균값 : 26.2355ms / 38.4615fps
 
-*ResNet 50
-<div class="img img--fullContainer img--5xLeading" style="background-image: url({{ site.baseurl_posts_img }}ResNet-50.png);"></div>
-평균값 : 27.8128ms
+* ResNet 50
+<div class="img img--fullContainer img--7xLeading" style="background-image: url({{ site.baseurl_posts_img }}ResNet-50.png);"></div>
+평균값 : 27.8128ms / 35.7143fps
 
-*Inception V4
-<div class="img img--fullContainer img--5xLeading" style="background-image: url({{ site.baseurl_posts_img }}Inception_V4.png);"></div>
-평균값 : 95.9434ms
+* Inception V4
+<div class="img img--fullContainer img--7xLeading" style="background-image: url({{ site.baseurl_posts_img }}Inception_V4.png);"></div>
+평균값 : 95.9434ms / 10.4167fps
 
-*Pose Estimation
-<div class="img img--fullContainer img--5xLeading" style="background-image: url({{ site.baseurl_posts_img }}Pose_Estimation.png);"></div>
-평균값 : 87.3721ms
+* U-Net Segmentation
+<div class="img img--fullContainer img--7xLeading" style="background-image: url({{ site.baseurl_posts_img }}U-Net_Segmentation.png);"></div>
+평균값 : 64.4632ms / 15.625fps
 
-*Super Resolution
-<div class="img img--fullContainer img--5xLeading" style="background-image: url({{ site.baseurl_posts_img }}Super_Resolution.png);"></div>
-평균값 : 67.5191ms
+* Pose Estimation
+<div class="img img--fullContainer img--7xLeading" style="background-image: url({{ site.baseurl_posts_img }}Pose_Estimation.png);"></div>
+평균값 : 87.3721ms / 11.4943fps
+
+* Super Resolution
+<div class="img img--fullContainer img--7xLeading" style="background-image: url({{ site.baseurl_posts_img }}Super_Resolution.png);"></div>
+평균값 : 67.5191ms / 14.7059fps
+
+* Tiny YOLO v3 (단일 측정)
+<div class="img img--fullContainer img--7xLeading" style="background-image: url({{ site.baseurl_posts_img }}tiny-yolo3.png);"></div>
+평균값 : 56.7769ms / 17.5439fps
+
+숫자는 머리가 너무 어지러우니, 측정한 값들을 보기 좋게 해보자.
+<div class="img img--fullContainer img--7xLeading" style="background-image: url({{ site.baseurl_posts_img }}jetson_benchmark_graph3.png);"></div>
+
+측정한 그래프의 fps와 nvidia측에서 제공한 benchmark 그래프와 비교해보자.
+
+비슷하다. 이래서 대기업 대기업 하나 싶다.
+
+결론 - 의심하지 말자.
