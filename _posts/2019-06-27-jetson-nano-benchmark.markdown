@@ -129,7 +129,7 @@ sudo jetson_clocks</blockquote>
 평균값 : 56.7769ms / 17.5439fps
 
 숫자는 머리가 너무 어지러우니, 측정한 값들을 보기 좋게 해보자.
-<div class="img img--fullContainer img--7xLeading" style="background-image: url({{ site.baseurl_posts_img }}jetson_benchmark_graph3.png);"></div>
+<div class="img img--fullContainer img--10xLeading" style="background-image: url({{ site.baseurl_posts_img }}jetson_benchmark_graph3.png);"></div>
 
 측정한 그래프의 fps와 nvidia측에서 제공한 benchmark 그래프와 비교해보자.
 
