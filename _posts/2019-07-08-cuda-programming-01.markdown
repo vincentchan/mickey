@@ -40,7 +40,7 @@ Jetson과 심도있는 대화를 나누기 위해 CUDA를 조금씩 접해보자
 c언어로 안녕? 이라는 말을 하고 싶을때 어떻게 하는가?
 
 
-<blockquote class="u--startsWithDoubleQuote">#include &#60;stdio.h&#62; </br></br>
+<blockquote class="u--startsWithDoubleQuote">#include &#60;stdio.h&#62; <br><br>
 
 void main(){
 
@@ -63,7 +63,7 @@ CUDA를 사용한다는 것은, 곧 그래픽카드에 접근하여 일을 처�
 
 CUDA식 인사를 살펴보자.
 
-<blockquote class="u--startsWithDoubleQuote">#include &#60;stdio.h&#62; </br></br>
+<blockquote class="u--startsWithDoubleQuote">#include &#60;stdio.h&#62; <br><br>
 
 **&#95;&#95;global__** void kernel(){
 
@@ -71,8 +71,8 @@ CUDA식 인사를 살펴보자.
 
 int main(void){
 
-  **kernel&#60;&#60;&#60;1,1&#62;&#62;&#62;()**</br></br>
-  printf("안녕?");</br></br>
+  **kernel&#60;&#60;&#60;1,1&#62;&#62;&#62;()**<br><br>
+  printf("안녕?");<br><br>
   return 0;
 
 }
@@ -142,16 +142,16 @@ _옆동네 조사장네는 직원도 많고 공장도 많은데.. 어쩐담..]_
 
 <blockquote class="u--startsWithDoubleQuote">
 #include &#60;stdio.h&#62;
-</br></br>
+<br><br>
 
-&#95;&#95;global__ void kernel(int a, int b, int *c) {</br>
+&#95;&#95;global__ void kernel(int a, int b, int *c) {<br>
 
 
     *c = a + b ;  
 
 }
 
-int main (void) {</br>
+int main (void) {<br>
 
       int c;
       int *d_c;
