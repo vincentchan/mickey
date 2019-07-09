@@ -2,7 +2,7 @@
 layout: post
 title:  "주간 작업 내역"
 date:   2019-06-24 03:15:00
-last_modified_at:  2019-06-24 03:15:00
+last_modified_at:  2019-07-10 04:15:00
 excerpt: "이 글은 주간 작업 내역을 기록하는 글이다."
 categories: lab
 tags:  python
@@ -22,6 +22,22 @@ syntaxHighlighter: no
 
 - 분류의 1은 저번주의 목표내역, 2는 이번주의 목표를 뜻한다.
 - 분류의 번호에 +기호가 붙은것은 우선적으로 처리해야 할 사항이었거나, 목표를 세웠을때와 다르게 추가적인 작업이 생겼을 경우, 처리한 작업에 대해 나타냄.
+
+7월 1째주
+
+분류 |목표     | 진행상황     | 문제점    |    해결방안   
+----- | -------------- | -------------- | -------------------- | ------------  
+1 |  Cuda Programming <br>시도하기 | 30% | 처음 접하는 내용과 개념 이기도 하고, c언어에 대해 미숙한 상태에서 진행.  | 지난주의 목표로 생각했던 점(간단한 병렬 프로그램 제작)을 보충하여 포스팅 작성할 것.
+1 | JetsonNano imagenet_camera의 결과출력문구 수정 및 명령어 해석 | 완료 |  | 하단 부분에 사진 참조.
+1+| SSA 코드 빌드/실행 및 논문 분석 | 5% | 1.synchronize on the stop event 발생</br> 2. 코드에 대한 이해 부족.. 3.영어.... | 교수님께 질의 할 것...
+1+ | JetsonNano devicequery 결과에 대한 nvidia에 질의하기 | 50 % | 상세하게 global memory 계산하는 방법에 대해 질의해야함.</br> 찾아본 내용에서는 구조체의 멤버로서 선언 되어 있었음.. | 영작 완료 후 nvidia에 질의할 것.
+1+ | NVidia Jetson Nano 강의 | Convolution Neural Networks까지 학습 | Jetson nano를 jupyter lab으로 실행할 수 있게 처음부터 다시 설정해야 해서 cuda programming이 우선이라고 생각해서 보류하였음. | 1.assign 되어 있는 cuda programming 관련 과제가 끝나면 시도</br> 2. 다른 연구원의 jetson으로 실행.
+1+ | Udacity cuda 강의 | 33/39 | kernel 선언시에 작성하는 parallel block의 수와 스레드 수를 선언하는 것에 대한 이해 부족 | 1.강의 여러번 시청</br> 2.빌려온 서적으로 추가 학습
+2 | Cuda Programming <br>시도하기 |  |  | Cuda programming에 익숙해지는 시간 가지기.
+2 | 전체적인 저번주 목표 완성도 높이기 | |
+
+<div class="img img--fullContainer img--14xLeading" style="background-image: url({{ site.baseurl_posts_img }}190709-jetsonnano-result-change.png);"></div>
+
 
 6월 5째주
 
