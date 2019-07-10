@@ -36,7 +36,10 @@ syntaxHighlighter: no
 2 | Cuda Programming <br>시도하기 |  |  | Cuda programming에 익숙해지는 시간 가지기.
 2 | 전체적인 저번주 목표 완성도 높이기 | |
 
+- Udacity 강의 진도 - Configuring the Kernel Launch Parameters Part 1 - Intro to Parallel Programming
 <div class="img img--fullContainer img--14xLeading" style="background-image: url({{ site.baseurl_posts_img }}190709-jetsonnano-result-change.png);"></div>
+
+<div class="img img--fullContainer img--14xLeading" style="background-image: url({{ site.baseurl_posts_img }}190710-ssa-failed.png);"></div>
 
 
 6월 5째주
