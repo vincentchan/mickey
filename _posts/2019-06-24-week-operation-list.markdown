@@ -39,7 +39,7 @@ syntaxHighlighter: no
 - Udacity 강의 진도 - Configuring the Kernel Launch Parameters Part 1 - Intro to Parallel Programming
 <div class="img img--fullContainer img--14xLeading" style="background-image: url({{ site.baseurl_posts_img }}190709-jetsonnano-result-change.png);"></div>
 
-<div class="img img--fullContainer img--14xLeading" style="background-image: url({{ site.baseurl_posts_img }}190710-ssa-failed.png);"></div>
+<div class="img img--fullContainer img--14xLeading" style="background-image: url({{ site.baseurl_posts_img }}190710ssa-failed.png);"></div>
 
 
 6월 5째주
