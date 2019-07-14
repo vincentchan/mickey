@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "CUDA Programming 시도"
+title:  "CUDA Programming 시도 (1)"
 date:   2019-07-08 17:30:00
 last_modified_at:  2019-07-08 17:41:00
 excerpt: ""
@@ -65,13 +65,13 @@ CUDA식 인사를 살펴보자.
 
 <blockquote class="u--startsWithDoubleQuote">#include &#60;stdio.h&#62; <br><br>
 
-**&#95;&#95;global__** void kernel(){
+__&#95;&#95;global____ void kernel(){
 
-}
+}<br>
 
-int main(void){
+int main(void){<br>
 
-  **kernel&#60;&#60;&#60;1,1&#62;&#62;&#62;()**<br><br>
+  __kernel&#60;&#60;&#60;1,1&#62;&#62;&#62;()__<br><br>
   printf("안녕?");<br><br>
   return 0;
 
@@ -134,39 +134,6 @@ _옆동네 조사장네는 직원도 많고 공장도 많은데.. 어쩐담..]_
 
 언젠가 해야 할 지도 모르는 고민을 미리 했다고 생각하자.
 
-자 그럼 기본적인 키워드에 대한 파악을 했으니 간단한 CUDA Programming을 시도해보자.
+기본적인 구성을 알아보았으니 메모리 할당에 대한 내용은 다음 포스팅에서 설명하겠다.
 
-간단한 덧셈을 GPU에서 해 볼 생각이다.
-
-작성한 코드는 다음과 같다.
-
-<blockquote class="u--startsWithDoubleQuote">
-#include &#60;stdio.h&#62;
-<br><br>
-
-&#95;&#95;global__ void kernel(int a, int b, int *c) {<br>
-
-
-    *c = a + b ;  
-
-}
-
-int main (void) {<br>
-
-      int c;
-      int *d_c;
-
-      cudaMalloc((void**)&d_c, sizeof(int));
-
-      kernel<<<1,1>>>(2,5,d_c);
-
-      cudaMemcpy(c,d_c,sizeof(int),cudaMemcpyDeviceToHost);
-
-      printf("2 + 5 = %d",c);
-
-      cudaFree(d_c);
-
-      return 0;
-
-}
-</blockquote>
+한번에 많이 배우면 머리만 아프다.
