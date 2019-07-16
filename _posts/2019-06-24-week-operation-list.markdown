@@ -41,14 +41,14 @@ syntaxHighlighter: no
 
 - SSA코드 grid,block 변화에 따른 실행 결과  
 (cuda : 128개, 단위 : 초 )        
-|grid|block|result
-|------|---|---
-|2|64|7.6
-|**4**|**32**|6.4
-|8|16|6.5
-|16|8|5.7
-|32|4|8.0
-|64|2|13.1
+ grid |block     | result     |   
+ ----- | ----- | ----- |   
+2 |64 |7.6|    
+ **4** |**32** |6.4|  
+8 |16 |6.5|     
+16 |8 |5.7|   
+32 |4 |8.0|   
+64 |2 |13.1|    
 
 - openmpi quick install for Ubuntu  
 <blockquote class="u--startsWithDoubleQuote">sudo apt-get install openmpi-bin openmpi-common openssh-client openssh-server libopenmpi1.3 libopenmpi-dbg libopenmpi-dev</blockquote>
