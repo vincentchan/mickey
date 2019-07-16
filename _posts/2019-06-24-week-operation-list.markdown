@@ -41,20 +41,22 @@ syntaxHighlighter: no
 
 - SSA코드 grid,block 변화에 따른 실행 결과  
 (cuda : 128개, 단위 : 초 )        
-|grid|block|result|
-|:------:|:---:|:---:|
-|2|64|7.6|
-|**4**|**32**|6.4|
-|8|16|6.5|
-|16|8|5.7|
-|32|4|8.0|
-|64|2|13.1|
+|grid|block|result
+|------|---|---
+|2|64|7.6
+|**4**|**32**|6.4
+|8|16|6.5
+|16|8|5.7
+|32|4|8.0
+|64|2|13.1
 
 - openmpi quick install for Ubuntu  
 <blockquote class="u--startsWithDoubleQuote">sudo apt-get install openmpi-bin openmpi-common openssh-client openssh-server libopenmpi1.3 libopenmpi-dbg libopenmpi-dev</blockquote>
   - libopenmpi1.3 package를 찾을 수 없다고 떠서 뒤의 숫자를 버전으로 생각하고 libopenmpi2를 install
   - libopenmpi-dbg package를 찾을 수 없다고 떠서 찾아보니 ubuntu내에서 15년 5월 이후부터 지운상태로 보여짐
-  <div class="img img--fullContainer img--14xLeading" style="background-image: url({{ site.baseurl_posts_img }}libopenmpi-dbgs_status.png);"></div>
+  <div class="img img--fullContainer img--12xLeading" style="background-image: url({{ site.baseurl_posts_img }}libopenmpi-dbgs_status.png);"></div>
+  - 간단한 mpi programming 결과
+  <div class="img img--fullContainer img--12xLeading" style="background-image: url({{ site.baseurl_posts_img }}mpi_programming_result.png);"></div>
 
 
 7월 1째주
