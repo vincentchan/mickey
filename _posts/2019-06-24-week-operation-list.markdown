@@ -22,6 +22,40 @@ syntaxHighlighter: no
 
 - 분류의 1은 저번주의 목표내역, 2는 이번주의 목표를 뜻한다.
 - 분류의 번호에 +기호가 붙은것은 우선적으로 처리해야 할 사항이었거나, 목표를 세웠을때와 다르게 추가적인 작업이 생겼을 경우, 처리한 작업에 대해 나타냄.
+- 이번주의 목표에 +가 붙은 경우, 목표로 세운 것이 다 완료 되었을때 추가적으로 할 작업에 대해 작성된 내용임.
+
+7월 2째주
+
+분류 |목표     | 진행상황     | 문제점    |    해결방안   
+----- | -------------- | -------------- | -------------------- | ------------  
+1 |  Cuda Programming <br>시도하기 | 50% | 행렬 덧셈 코드 작성 중 오류를 해결하지 못함  | 오류 해결 후 행렬 곱셈코드 만들어보기
+1| SSA 코드 빌드/실행 및 논문 분석 | 50% | ssa_kernel.cu 코드와 논문을 자세히 살펴보지 않았음. | 1.코드숙지 필요.<br>2.논문 작성을 위해 논문 자세히 읽어볼 것(Method란 작성해야 함)
+1 | JetsonNano devicequery 결과에 대한 nvidia에 질의하기 | 80 % | 답변이 안옴.... | 영작을 수정하여 질문을 다시 해야 할지도 모름...
+1 | Udacity cuda 강의 | 90% | 수강은 다 하였으나, 차원에 대한 이해가 부족하다고 느껴짐. | 1.강의 여러번 시청<br> 2.빌려온 서적으로 추가 학습
+1 | 전체적인 이번주 목표 완성도 높이기 | 60% | 지난주에 목표로 잡았던 것들을 많이 해냇으나, 아직 완성도가 부족하다고 느낌. | 목표로 잡은 내용을 빠르게 해결하고 mpi실습으로 넘어갈 것.
+1+ | JetsonNano에 openmpi 설치하기 | 50% | 1.설치시에 라이브러리 하나가 삭제되어서 설치하지 못하였음.(mpi code 실행은 됨.)<br> 2.1대의 jetson에만 설치하였음  | 1.대체하는 라이브러리가 있는지 확인(실행에 문제가 없다면 넘어가도 될 듯 함)<br> 2. 2대의 jetson에 설치하여 병렬처리 시도해보기(NFS 설치)
+2 | openmpi 공부 |  | openmpi를 처음 접해봄 | 1.주로 쓰이는 키워드에 대한 파악<br>2.MPI에 대한 이해<br>3.프로그래밍
+2+ | SSA코드 병렬 실행 | |
+
+- NVidia 측에 질문한 내용 : [링크](https://devtalk.nvidia.com/default/topic/1057267/cuda-memcheck/how-can-i-calculate-total-amount-of-global-memory-/post/5360791/#5360791)
+
+- SSA코드 grid,block 변화에 따른 실행 결과  
+(cuda : 128개, 단위 : 초 )        
+|grid|block|result|
+|:------:|:---:|:---:|
+|2|64|7.6|
+|**4**|**32**|6.4|
+|8|16|6.5|
+|16|8|5.7|
+|32|4|8.0|
+|64|2|13.1|
+
+- openmpi quick install for Ubuntu  
+<blockquote class="u--startsWithDoubleQuote">sudo apt-get install openmpi-bin openmpi-common openssh-client openssh-server libopenmpi1.3 libopenmpi-dbg libopenmpi-dev</blockquote>
+  - libopenmpi1.3 package를 찾을 수 없다고 떠서 뒤의 숫자를 버전으로 생각하고 libopenmpi2를 install
+  - libopenmpi-dbg package를 찾을 수 없다고 떠서 찾아보니 ubuntu내에서 15년 5월 이후부터 지운상태로 보여짐
+  <div class="img img--fullContainer img--14xLeading" style="background-image: url({{ site.baseurl_posts_img }}libopenmpi-dbgs_status.png);"></div>
+
 
 7월 1째주
 
