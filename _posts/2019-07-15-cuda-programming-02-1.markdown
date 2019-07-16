@@ -7,7 +7,7 @@ excerpt: ""
 categories: lab
 tags:  Jetson Nano, CUDA
 image:
-  feature: mickey-riding.jpg
+  feature: mickey-questions.jpg
   topPosition: 0px
 bgContrast: dark
 bgGradientOpacity: darker
