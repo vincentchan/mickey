@@ -109,8 +109,8 @@ vi ~/.bashrc
 를 실행하여 파일의 맨 끝에 다음과 같이 경로를 설정해주자.
 
 <blockquote class="u--startsWithDoubleQuote">
-export PATH=/usr/local/cuda-10.0/bin${PATH:+:PATH}}<br>
-export LD_LIBRARY_PATH=/usr/local/cuda-10.0/lib64{LD_LIBRARY_PATH:+LD_LIBRARY_PATH}}
+export PATH=/usr/local/cuda-10.0/bin${PATH:+:${PATH}}<br>
+export LD_LIBRARY_PATH=/usr/local/cuda-10.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 </blockquote>
 
 기본적인 동작은 다음과 같다.
