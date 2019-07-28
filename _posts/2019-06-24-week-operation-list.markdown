@@ -33,7 +33,7 @@ syntaxHighlighter: no
 2|jetson에서 동시에 코드 실행| | |
 2|Udacity 강의 듣고 SSA코드를 어떻게 병렬적으로 나눌 것인지 생각 및 시도| | |
 
-- <div class="img img--fullContainer img--12xLeading" style="background-image: url({{ site.baseurl_posts_img }}not_enough_slots.png);"></div>
+- not enough slot 오류..?<div class="img img--fullContainer img--12xLeading" style="background-image: url({{ site.baseurl_posts_img }}not_enough_slots.png);"></div>
 
 7월 3째주  
 
