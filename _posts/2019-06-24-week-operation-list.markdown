@@ -30,7 +30,7 @@ syntaxHighlighter: no
 ----- | -------------- | -------------- | -------------------- | ------------  
 1 | openmpi device 병렬 실행 | 완료 |  |
 1 | SSA코드 병렬 실행 | 미진행 | ssa_kernel의 동작 방식을 모르겠음.. | 교수님께 힌트 받아오기
-1+|논문 초안 작성|10% |아직 논문주제에 대한 이해가 부족함.[다운로드](https://drive.google.com/open?id=1Cfja5C-6ZNR1qNjRym9r3uZiHGo8y3S7) | 1.주제에 대한 질의<br>2.참고 논문 해석
+1+|논문 초안 작성|10% |아직 논문주제에 대한 이해가 부족함. | 1.주제에 대한 질의<br>2.참고 논문 해석
 1+| code 책 읽기| 4% | |
 2|SSA코드 병렬 실행 | |디버깅 방법에 대한 고민 | 직접 해볼 것
 2|논문에 구체적인 틀 잡기 | |아직 정확히 논문 주제를 모르겠음 |  1.주제에 대한 질의<br>2.참고 논문 해석
@@ -61,7 +61,7 @@ syntaxHighlighter: no
 2+| 논문 틀 잡기 및 여러 jetson에서 동시에 코드 실행| | |
 
 - [nfs 설정 링크](https://darksoulstory.tistory.com/9)  
-- [작업한 파일 다운로드](https://drive.google.com/drive/folders/1Cfja5C-6ZNR1qNjRym9r3uZiHGo8y3S7?usp=sharing)
+- [작업한 파일 다운로드]()
 
 7월 2째주
 
