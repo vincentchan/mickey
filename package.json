@@ -2,11 +2,11 @@
   "name": "Mickey",
   "version": "0.0.1",
   "description": "A minimal one-column, responsive theme for Jekyll",
-  "homepage": "http://vincentchan.github.io/mickey",
-  "author": "Vincent Chan",
+  "homepage": "kalimero666.github.io",
+  "author": "Kalimero from Vincent Chan",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vincentchan"
+    "url": "https://github.com/KaliMerO666/kalimero666.github.io/tree/kalimero666.github.io"
   },
   "devDependencies": {
     "browser-sync": "~2.9.7",
