@@ -1,4 +1,4 @@
-# Mickey
+#This is a fork of Mickey by vincentchan.github.io to present the french artist Kalimero’s work.
 
 Mickey is a minimal one-column, responsive theme for [Jekyll](http://jekyllrb.com).
 
