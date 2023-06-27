@@ -1,22 +1,21 @@
 {
-  "name": "Mickey",
   "version": "0.0.1",
-  "description": "A minimal one-column, responsive theme for Jekyll",
-  "homepage": "kalimero666.github.io",
-  "author": "Kalimero from Vincent Chan",
+  "description": "Vincent Chan's Mickey responsive theme for Jekyll",
+  "homepage": "http://kalimero666.github.io/kalimero666",
+  "author": "Kalimero666",
   "repository": {
     "type": "git",
-    "url": "https://github.com/KaliMerO666/kalimero666.github.io/tree/kalimero666.github.io"
+    "url": "https://github.com/Book-O-Matic/yamwhatyam"
   },
   "devDependencies": {
-    "browser-sync": "~2.9.7",
+    "browser-sync": "^2.29.3",
     "concurrent-transform": "^1.0.0",
-    "gulp": "^3.9.0",
-    "gulp-autoprefixer": "~3.0.2",
-    "gulp-image-resize": "^0.6.0",
-    "gulp-minify-css": "~1.2.1",
-    "gulp-postcss": "~6.0.0",
-    "gulp-rename": "~1.2.2",
-    "gulp-sass": "^2.0.4"
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-image-resize": "^0.13.1",
+    "gulp-clean-css": "~4.3.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "~1.2.0",
+    "gulp-sass": "^5.1.0"
   }
 }
