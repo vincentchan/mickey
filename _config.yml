@@ -4,14 +4,14 @@ markdown:            redcarpet
 highlighter:         pygments
 
 # Permalinks
-permalink:           /:title
+permalink:           :title
 relative_permalinks: true
 
 # Setup
 timezone:            Paris/Europe
 locale:              fr_FR
-name:				         kalimero.rocks 
-title:               KaliMero's WhiteBorrred Junglecita 
+name:                kalimero.rocks 
+title:               KaliMero's WhiteBrrrd Junglecita 
 tagline:             'graphic-novels,  comics, wild at art,kalimero,  kalimero666'
 description:         'who is kalimero Von Bulow'
 url:                 https://kalimero666.github.io 
@@ -22,18 +22,17 @@ baseurl_featured_img: '/assets/images/hero/'
 baseurl_featured_thumbnail: '/assets/images/thumbnail/'
 baseurl_javascripts: '/assets/javascripts/'
 icon:                your site icon path # /assets/img/icon.png [best 300px X 300px]
-disqus:              disqus_shortname # get it on https://disqus.com/admin/
+disqus:              @disqus_kalimero666
 
 author:
-  name:           	 kalimero X1/9
-  url:            	 kalimero.rocks 
-  facebook:          username
-  twitter:           username
-  google_plus:       username
-  linkedin:          username
-  dribbble:          username
-  pinterest:         username
-  kiva:              username
+ name:             kalimero X1/9
+  url:               kalimero.rocks 
+  facebook:          kalimero.officiel
+  twitter:           @Kalimero_666_
+  google_plus:       kalimero-7744
+  linkedin:          KaliMero_666
+  dribbble:          kalimero666
+  fr.tipeee.com:    kalimero
 
 fb_admins:           your facebook profile id
 fb_appid:            your facebook app id
